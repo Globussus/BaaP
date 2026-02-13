@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_case.dir/test_case.cc.o -o test_case  -Wl,-rpath,/home/stani/Документы/553501/ОАиП/LR5/tests/../src/Task2 /home/stani/Документы/553501/ОАиП/LR5/tests/../src/Task1/libmatrixlib.a /home/stani/Документы/553501/ОАиП/LR5/tests/../src/Task2/libarray_functions.so lib/libgtest_main.a lib/libgtest.a 

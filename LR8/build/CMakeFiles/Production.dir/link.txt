@@ -1,0 +1,2 @@
+/usr/bin/ar qc libProduction.a CMakeFiles/Production.dir/src/Production.cpp.o
+/usr/bin/ranlib libProduction.a

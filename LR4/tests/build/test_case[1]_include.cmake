@@ -1,0 +1,5 @@
+if(EXISTS "/home/stani/Документы/553501/ОАиП/LR4/tests/build/test_case[1]_tests.cmake")
+  include("/home/stani/Документы/553501/ОАиП/LR4/tests/build/test_case[1]_tests.cmake")
+else()
+  add_test(test_case_NOT_BUILT test_case_NOT_BUILT)
+endif()

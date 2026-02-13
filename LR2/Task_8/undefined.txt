@@ -1,0 +1,1 @@
+g++ Task_8.cpp -o -g Task_8.exe -fsanitize=undefined

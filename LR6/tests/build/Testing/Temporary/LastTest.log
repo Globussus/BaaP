@@ -1,0 +1,853 @@
+Start testing: Nov 18 13:48 +03
+----------------------------------------------------------
+1/30 Testing: Task1.test1
+1/30 Test: Task1.test1
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task1.test1" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task1.test1" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task1.test1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task1
+[ RUN      ] Task1.test1
+[       OK ] Task1.test1 (0 ms)
+[----------] 1 test from Task1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Task1.test1" end time: Nov 18 13:48 +03
+"Task1.test1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/30 Testing: Task1.test2
+2/30 Test: Task1.test2
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task1.test2" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task1.test2" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task1.test2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task1
+[ RUN      ] Task1.test2
+[       OK ] Task1.test2 (0 ms)
+[----------] 1 test from Task1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Task1.test2" end time: Nov 18 13:48 +03
+"Task1.test2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/30 Testing: Task1.test3
+3/30 Test: Task1.test3
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task1.test3" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task1.test3" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task1.test3
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task1
+[ RUN      ] Task1.test3
+[       OK ] Task1.test3 (0 ms)
+[----------] 1 test from Task1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Task1.test3" end time: Nov 18 13:48 +03
+"Task1.test3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/30 Testing: Task1.test4
+4/30 Test: Task1.test4
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task1.test4" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task1.test4" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task1.test4
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task1
+[ RUN      ] Task1.test4
+[       OK ] Task1.test4 (0 ms)
+[----------] 1 test from Task1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Task1.test4" end time: Nov 18 13:48 +03
+"Task1.test4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/30 Testing: Task1.test5
+5/30 Test: Task1.test5
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task1.test5" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task1.test5" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task1.test5
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task1
+[ RUN      ] Task1.test5
+[       OK ] Task1.test5 (0 ms)
+[----------] 1 test from Task1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Task1.test5" end time: Nov 18 13:48 +03
+"Task1.test5" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/30 Testing: Task1.test6
+6/30 Test: Task1.test6
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task1.test6" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task1.test6" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task1.test6
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task1
+[ RUN      ] Task1.test6
+[       OK ] Task1.test6 (0 ms)
+[----------] 1 test from Task1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Task1.test6" end time: Nov 18 13:48 +03
+"Task1.test6" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/30 Testing: Task1.test7
+7/30 Test: Task1.test7
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task1.test7" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task1.test7" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task1.test7
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task1
+[ RUN      ] Task1.test7
+[       OK ] Task1.test7 (0 ms)
+[----------] 1 test from Task1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Task1.test7" end time: Nov 18 13:48 +03
+"Task1.test7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/30 Testing: Task1.test8
+8/30 Test: Task1.test8
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task1.test8" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task1.test8" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task1.test8
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task1
+[ RUN      ] Task1.test8
+[       OK ] Task1.test8 (0 ms)
+[----------] 1 test from Task1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Task1.test8" end time: Nov 18 13:48 +03
+"Task1.test8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/30 Testing: Task1.test9
+9/30 Test: Task1.test9
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task1.test9" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task1.test9" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task1.test9
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task1
+[ RUN      ] Task1.test9
+[       OK ] Task1.test9 (0 ms)
+[----------] 1 test from Task1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Task1.test9" end time: Nov 18 13:48 +03
+"Task1.test9" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/30 Testing: Task1.test10
+10/30 Test: Task1.test10
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task1.test10" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task1.test10" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task1.test10
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task1
+[ RUN      ] Task1.test10
+[       OK ] Task1.test10 (0 ms)
+[----------] 1 test from Task1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Task1.test10" end time: Nov 18 13:48 +03
+"Task1.test10" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/30 Testing: Task2.test1
+11/30 Test: Task2.test1
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task2.test1" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task2.test1" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task2.test1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task2
+[ RUN      ] Task2.test1
+Гласные буквы: 
+
+Согласные буквы: 
+
+[       OK ] Task2.test1 (0 ms)
+[----------] 1 test from Task2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Task2.test1" end time: Nov 18 13:48 +03
+"Task2.test1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/30 Testing: Task2.test2
+12/30 Test: Task2.test2
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task2.test2" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task2.test2" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task2.test2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task2
+[ RUN      ] Task2.test2
+Гласные буквы: 
+a
+Согласные буквы: 
+
+[       OK ] Task2.test2 (0 ms)
+[----------] 1 test from Task2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Task2.test2" end time: Nov 18 13:48 +03
+"Task2.test2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/30 Testing: Task2.test3
+13/30 Test: Task2.test3
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task2.test3" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task2.test3" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task2.test3
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task2
+[ RUN      ] Task2.test3
+Гласные буквы: 
+aa
+Согласные буквы: 
+bb
+[       OK ] Task2.test3 (0 ms)
+[----------] 1 test from Task2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Task2.test3" end time: Nov 18 13:48 +03
+"Task2.test3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/30 Testing: Task2.test4
+14/30 Test: Task2.test4
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task2.test4" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task2.test4" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task2.test4
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task2
+[ RUN      ] Task2.test4
+Гласные буквы: 
+aa
+Согласные буквы: 
+bb
+[       OK ] Task2.test4 (0 ms)
+[----------] 1 test from Task2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Task2.test4" end time: Nov 18 13:48 +03
+"Task2.test4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/30 Testing: Task2.test5
+15/30 Test: Task2.test5
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task2.test5" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task2.test5" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task2.test5
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task2
+[ RUN      ] Task2.test5
+Гласные буквы: 
+aaa
+Согласные буквы: 
+bbbb
+[       OK ] Task2.test5 (0 ms)
+[----------] 1 test from Task2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Task2.test5" end time: Nov 18 13:48 +03
+"Task2.test5" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/30 Testing: Task2.test6
+16/30 Test: Task2.test6
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task2.test6" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task2.test6" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task2.test6
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task2
+[ RUN      ] Task2.test6
+Гласные буквы: 
+
+Согласные буквы: 
+zzzzz
+[       OK ] Task2.test6 (0 ms)
+[----------] 1 test from Task2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Task2.test6" end time: Nov 18 13:48 +03
+"Task2.test6" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/30 Testing: Task2.test7
+17/30 Test: Task2.test7
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task2.test7" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task2.test7" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task2.test7
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task2
+[ RUN      ] Task2.test7
+Гласные буквы: 
+aaaaaaaaa
+Согласные буквы: 
+
+[       OK ] Task2.test7 (0 ms)
+[----------] 1 test from Task2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Task2.test7" end time: Nov 18 13:48 +03
+"Task2.test7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/30 Testing: Task2.test8
+18/30 Test: Task2.test8
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task2.test8" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task2.test8" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task2.test8
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task2
+[ RUN      ] Task2.test8
+Гласные буквы: 
+aaaaaa
+Согласные буквы: 
+
+[       OK ] Task2.test8 (0 ms)
+[----------] 1 test from Task2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Task2.test8" end time: Nov 18 13:48 +03
+"Task2.test8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/30 Testing: Task2.test9
+19/30 Test: Task2.test9
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task2.test9" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task2.test9" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task2.test9
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task2
+[ RUN      ] Task2.test9
+Гласные буквы: 
+uu
+Согласные буквы: 
+bb
+[       OK ] Task2.test9 (0 ms)
+[----------] 1 test from Task2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Task2.test9" end time: Nov 18 13:48 +03
+"Task2.test9" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/30 Testing: Task2.test10
+20/30 Test: Task2.test10
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task2.test10" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task2.test10" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task2.test10
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task2
+[ RUN      ] Task2.test10
+Гласные буквы: 
+oo
+Согласные буквы: 
+vvvvvvv
+[       OK ] Task2.test10 (0 ms)
+[----------] 1 test from Task2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Task2.test10" end time: Nov 18 13:48 +03
+"Task2.test10" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/30 Testing: Task3.test1
+21/30 Test: Task3.test1
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task3.test1" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task3.test1" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task3.test1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task3
+[ RUN      ] Task3.test1
+[       OK ] Task3.test1 (0 ms)
+[----------] 1 test from Task3 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Task3.test1" end time: Nov 18 13:48 +03
+"Task3.test1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/30 Testing: Task3.test2
+22/30 Test: Task3.test2
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task3.test2" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task3.test2" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task3.test2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task3
+[ RUN      ] Task3.test2
+[       OK ] Task3.test2 (0 ms)
+[----------] 1 test from Task3 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Task3.test2" end time: Nov 18 13:48 +03
+"Task3.test2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/30 Testing: Task3.test3
+23/30 Test: Task3.test3
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task3.test3" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task3.test3" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task3.test3
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task3
+[ RUN      ] Task3.test3
+[       OK ] Task3.test3 (0 ms)
+[----------] 1 test from Task3 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Task3.test3" end time: Nov 18 13:48 +03
+"Task3.test3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/30 Testing: Task3.test4
+24/30 Test: Task3.test4
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task3.test4" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task3.test4" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task3.test4
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task3
+[ RUN      ] Task3.test4
+[       OK ] Task3.test4 (0 ms)
+[----------] 1 test from Task3 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Task3.test4" end time: Nov 18 13:48 +03
+"Task3.test4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/30 Testing: Task3.test5
+25/30 Test: Task3.test5
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task3.test5" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task3.test5" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task3.test5
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task3
+[ RUN      ] Task3.test5
+[       OK ] Task3.test5 (0 ms)
+[----------] 1 test from Task3 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Task3.test5" end time: Nov 18 13:48 +03
+"Task3.test5" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/30 Testing: Task3.test6
+26/30 Test: Task3.test6
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task3.test6" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task3.test6" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task3.test6
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task3
+[ RUN      ] Task3.test6
+[       OK ] Task3.test6 (0 ms)
+[----------] 1 test from Task3 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Task3.test6" end time: Nov 18 13:48 +03
+"Task3.test6" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/30 Testing: Task3.test7
+27/30 Test: Task3.test7
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task3.test7" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task3.test7" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task3.test7
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task3
+[ RUN      ] Task3.test7
+[       OK ] Task3.test7 (0 ms)
+[----------] 1 test from Task3 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Task3.test7" end time: Nov 18 13:48 +03
+"Task3.test7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/30 Testing: Task3.test8
+28/30 Test: Task3.test8
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task3.test8" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task3.test8" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task3.test8
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task3
+[ RUN      ] Task3.test8
+[       OK ] Task3.test8 (0 ms)
+[----------] 1 test from Task3 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Task3.test8" end time: Nov 18 13:48 +03
+"Task3.test8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/30 Testing: Task3.test9
+29/30 Test: Task3.test9
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task3.test9" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task3.test9" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task3.test9
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task3
+[ RUN      ] Task3.test9
+[       OK ] Task3.test9 (0 ms)
+[----------] 1 test from Task3 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Task3.test9" end time: Nov 18 13:48 +03
+"Task3.test9" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/30 Testing: Task3.test10
+30/30 Test: Task3.test10
+Command: "/home/stani/Документы/553501/ОАиП/LR6/tests/build/run_tests" "--gtest_filter=Task3.test10" "--gtest_also_run_disabled_tests"
+Directory: /home/stani/Документы/553501/ОАиП/LR6/tests/build
+"Task3.test10" start time: Nov 18 13:48 +03
+Output:
+----------------------------------------------------------
+Running main() from /home/stani/Документы/553501/ОАиП/LR6/tests/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Task3.test10
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Task3
+[ RUN      ] Task3.test10
+[       OK ] Task3.test10 (0 ms)
+[----------] 1 test from Task3 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"Task3.test10" end time: Nov 18 13:48 +03
+"Task3.test10" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 18 13:48 +03

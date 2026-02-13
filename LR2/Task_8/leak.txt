@@ -1,0 +1,1 @@
+g++ Task_8.cpp -g -o Task_8.exe -fsanitize=leak

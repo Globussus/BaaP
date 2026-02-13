@@ -1,0 +1,7 @@
+/home/stani/Документы/553501/ОАиП/LR8/build/CMakeFiles/Library.dir
+/home/stani/Документы/553501/ОАиП/LR8/build/CMakeFiles/Production.dir
+/home/stani/Документы/553501/ОАиП/LR8/build/CMakeFiles/InputChecker.dir
+/home/stani/Документы/553501/ОАиП/LR8/build/CMakeFiles/Task1.dir
+/home/stani/Документы/553501/ОАиП/LR8/build/CMakeFiles/Task2.dir
+/home/stani/Документы/553501/ОАиП/LR8/build/CMakeFiles/edit_cache.dir
+/home/stani/Документы/553501/ОАиП/LR8/build/CMakeFiles/rebuild_cache.dir

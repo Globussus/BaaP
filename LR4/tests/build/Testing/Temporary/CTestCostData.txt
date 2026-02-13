@@ -1,0 +1,13 @@
+IsSumCorrect.test1 3 0.00105227
+IsSumCorrect.test2 1 0.00341204
+IsCorrectArray.test1 0 0
+AreCorrectArrays.test1 3 0.00087839
+AreCorrectArrays.test2 1 0.00183169
+Task1.test1 18 0.000375526
+Task1.test2 18 0.000290194
+Task2.test1 17 0.000305317
+Task2.test2 16 0.000323916
+Task3.test1 14 0.000330801
+Task3.test2 12 0.000396673
+Task3.test3 9 0.000602145
+---

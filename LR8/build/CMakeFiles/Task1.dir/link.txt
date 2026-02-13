@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Task1.dir/src/Task1/main.cpp.o -o Task1  libProduction.a libInputChecker.a 

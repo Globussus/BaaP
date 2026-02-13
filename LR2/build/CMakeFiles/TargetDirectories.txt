@@ -1,0 +1,14 @@
+/mnt/c/Users/stani/Documents/553501/ОАиП/LR2/build/CMakeFiles/Task_1.dir
+/mnt/c/Users/stani/Documents/553501/ОАиП/LR2/build/CMakeFiles/Task_2.dir
+/mnt/c/Users/stani/Documents/553501/ОАиП/LR2/build/CMakeFiles/Task_3.dir
+/mnt/c/Users/stani/Documents/553501/ОАиП/LR2/build/CMakeFiles/Task_4.dir
+/mnt/c/Users/stani/Documents/553501/ОАиП/LR2/build/CMakeFiles/Task_5.dir
+/mnt/c/Users/stani/Documents/553501/ОАиП/LR2/build/CMakeFiles/Task_6.dir
+/mnt/c/Users/stani/Documents/553501/ОАиП/LR2/build/CMakeFiles/Task_7.dir
+/mnt/c/Users/stani/Documents/553501/ОАиП/LR2/build/CMakeFiles/Task_8.dir
+/mnt/c/Users/stani/Documents/553501/ОАиП/LR2/build/CMakeFiles/Task_9.dir
+/mnt/c/Users/stani/Documents/553501/ОАиП/LR2/build/CMakeFiles/Task_10.dir
+/mnt/c/Users/stani/Documents/553501/ОАиП/LR2/build/CMakeFiles/Task_11.dir
+/mnt/c/Users/stani/Documents/553501/ОАиП/LR2/build/CMakeFiles/Task_12.dir
+/mnt/c/Users/stani/Documents/553501/ОАиП/LR2/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/stani/Documents/553501/ОАиП/LR2/build/CMakeFiles/rebuild_cache.dir

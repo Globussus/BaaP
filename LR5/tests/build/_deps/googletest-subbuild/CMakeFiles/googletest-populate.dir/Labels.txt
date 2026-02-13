@@ -1,0 +1,14 @@
+# Target labels
+ googletest-populate
+# Source files and their labels
+/home/stani/Документы/553501/ОАиП/LR5/tests/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate
+/home/stani/Документы/553501/ОАиП/LR5/tests/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.rule
+/home/stani/Документы/553501/ОАиП/LR5/tests/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete.rule
+/home/stani/Документы/553501/ОАиП/LR5/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build.rule
+/home/stani/Документы/553501/ОАиП/LR5/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure.rule
+/home/stani/Документы/553501/ОАиП/LR5/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download.rule
+/home/stani/Документы/553501/ОАиП/LR5/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install.rule
+/home/stani/Документы/553501/ОАиП/LR5/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir.rule
+/home/stani/Документы/553501/ОАиП/LR5/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch.rule
+/home/stani/Документы/553501/ОАиП/LR5/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test.rule
+/home/stani/Документы/553501/ОАиП/LR5/tests/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update.rule

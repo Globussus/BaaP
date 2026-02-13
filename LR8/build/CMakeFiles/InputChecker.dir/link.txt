@@ -1,0 +1,2 @@
+/usr/bin/ar qc libInputChecker.a CMakeFiles/InputChecker.dir/src/InputChecker.cpp.o
+/usr/bin/ranlib libInputChecker.a

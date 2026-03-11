@@ -1,0 +1,5 @@
+/home/stani/Документы/553501/ОАиП/LR11/Task1/build/CMakeFiles/Task1.dir
+/home/stani/Документы/553501/ОАиП/LR11/Task1/build/CMakeFiles/edit_cache.dir
+/home/stani/Документы/553501/ОАиП/LR11/Task1/build/CMakeFiles/rebuild_cache.dir
+/home/stani/Документы/553501/ОАиП/LR11/Task1/build/CMakeFiles/Task1_autogen_timestamp_deps.dir
+/home/stani/Документы/553501/ОАиП/LR11/Task1/build/CMakeFiles/Task1_autogen.dir

@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-83c918f64d7ca4833fb5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Task5",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Task5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task5-Debug-a6fc9d12c6a4dcf9e8e7.json",
+					"name" : "Task5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Task5_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task5_autogen-Debug-03c7624e49aa532d54e4.json",
+					"name" : "Task5_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Task5_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task5_autogen_timestamp_deps-Debug-eafe250db9da090c4cde.json",
+					"name" : "Task5_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/stani/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/553501/\u041e\u0410\u0438\u041f/LR11/Task5/build",
+		"source" : "/home/stani/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/553501/\u041e\u0410\u0438\u041f/LR11/Task5"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

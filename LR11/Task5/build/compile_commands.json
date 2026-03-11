@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/stani/Документы/553501/ОАиП/LR11/Task5/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/stani/Документы/553501/ОАиП/LR11/Task5/build/Task5_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task5.dir/Task5_autogen/mocs_compilation.cpp.o -c /home/stani/Документы/553501/ОАиП/LR11/Task5/build/Task5_autogen/mocs_compilation.cpp",
+  "file": "/home/stani/Документы/553501/ОАиП/LR11/Task5/build/Task5_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/Task5.dir/Task5_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/stani/Документы/553501/ОАиП/LR11/Task5/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/stani/Документы/553501/ОАиП/LR11/Task5/build/Task5_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task5.dir/main.cpp.o -c /home/stani/Документы/553501/ОАиП/LR11/Task5/main.cpp",
+  "file": "/home/stani/Документы/553501/ОАиП/LR11/Task5/main.cpp",
+  "output": "CMakeFiles/Task5.dir/main.cpp.o"
+},
+{
+  "directory": "/home/stani/Документы/553501/ОАиП/LR11/Task5/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/stani/Документы/553501/ОАиП/LR11/Task5/build/Task5_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task5.dir/mainwindow.cpp.o -c /home/stani/Документы/553501/ОАиП/LR11/Task5/mainwindow.cpp",
+  "file": "/home/stani/Документы/553501/ОАиП/LR11/Task5/mainwindow.cpp",
+  "output": "CMakeFiles/Task5.dir/mainwindow.cpp.o"
+},
+{
+  "directory": "/home/stani/Документы/553501/ОАиП/LR11/Task5/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/stani/Документы/553501/ОАиП/LR11/Task5/build/Task5_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task5.dir/tools.cpp.o -c /home/stani/Документы/553501/ОАиП/LR11/Task5/tools.cpp",
+  "file": "/home/stani/Документы/553501/ОАиП/LR11/Task5/tools.cpp",
+  "output": "CMakeFiles/Task5.dir/tools.cpp.o"
+}
+]

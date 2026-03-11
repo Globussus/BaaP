@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/stani/Документы/553501/ОАиП/LR10/Task1/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/stani/Документы/553501/ОАиП/LR10/Task1/build/Task1_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task1.dir/Task1_autogen/mocs_compilation.cpp.o -c /home/stani/Документы/553501/ОАиП/LR10/Task1/build/Task1_autogen/mocs_compilation.cpp",
+  "file": "/home/stani/Документы/553501/ОАиП/LR10/Task1/build/Task1_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/Task1.dir/Task1_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/stani/Документы/553501/ОАиП/LR10/Task1/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/stani/Документы/553501/ОАиП/LR10/Task1/build/Task1_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task1.dir/main.cpp.o -c /home/stani/Документы/553501/ОАиП/LR10/Task1/main.cpp",
+  "file": "/home/stani/Документы/553501/ОАиП/LR10/Task1/main.cpp",
+  "output": "CMakeFiles/Task1.dir/main.cpp.o"
+},
+{
+  "directory": "/home/stani/Документы/553501/ОАиП/LR10/Task1/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/stani/Документы/553501/ОАиП/LR10/Task1/build/Task1_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task1.dir/mainwindow.cpp.o -c /home/stani/Документы/553501/ОАиП/LR10/Task1/mainwindow.cpp",
+  "file": "/home/stani/Документы/553501/ОАиП/LR10/Task1/mainwindow.cpp",
+  "output": "CMakeFiles/Task1.dir/mainwindow.cpp.o"
+},
+{
+  "directory": "/home/stani/Документы/553501/ОАиП/LR10/Task1/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/stani/Документы/553501/ОАиП/LR10/Task1/build/Task1_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task1.dir/date.cpp.o -c /home/stani/Документы/553501/ОАиП/LR10/Task1/date.cpp",
+  "file": "/home/stani/Документы/553501/ОАиП/LR10/Task1/date.cpp",
+  "output": "CMakeFiles/Task1.dir/date.cpp.o"
+}
+]

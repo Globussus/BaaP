@@ -1,0 +1,3 @@
+/home/stani/Документы/553501/ОАиП/LR10/Task3-4/build/CMakeFiles/Task3.dir
+/home/stani/Документы/553501/ОАиП/LR10/Task3-4/build/CMakeFiles/edit_cache.dir
+/home/stani/Документы/553501/ОАиП/LR10/Task3-4/build/CMakeFiles/rebuild_cache.dir

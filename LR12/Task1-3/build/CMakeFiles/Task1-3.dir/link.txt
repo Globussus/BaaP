@@ -1,0 +1,1 @@
+/usr/bin/c++ "CMakeFiles/Task1-3.dir/src/main.cpp.o" "CMakeFiles/Task1-3.dir/src/contextmenu.cpp.o" "CMakeFiles/Task1-3.dir/src/tools.cpp.o" -o Task1-3 

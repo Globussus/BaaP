@@ -12,4 +12,4 @@ private:
     double value;
 };
 
-#endif // NUMBER_H
+#endif

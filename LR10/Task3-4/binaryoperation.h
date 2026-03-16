@@ -15,4 +15,4 @@ private:
     Expression *right;
 };
 
-#endif // BINARYOPERATION_H
+#endif

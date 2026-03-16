@@ -269,7 +269,7 @@
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/home/stani/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/553501/\u041e\u0410\u0438\u041f/LR10/Task1/build/Task1_autogen/include",
 	"MOC_COMPILATION_FILE" : "/home/stani/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/553501/\u041e\u0410\u0438\u041f/LR10/Task1/build/Task1_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[

@@ -72,7 +72,7 @@ Task1_autogen/timestamp: /usr/lib/qt6/libexec/moc
 Task1_autogen/timestamp: /usr/lib/qt6/libexec/uic
 Task1_autogen/timestamp: CMakeFiles/Task1_autogen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/stani/Документы/553501/ОАиП/LR10/Task1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Task1"
-	/usr/bin/cmake -E cmake_autogen /home/stani/Документы/553501/ОАиП/LR10/Task1/build/CMakeFiles/Task1_autogen.dir/AutogenInfo.json Debug
+	/usr/bin/cmake -E cmake_autogen /home/stani/Документы/553501/ОАиП/LR10/Task1/build/CMakeFiles/Task1_autogen.dir/AutogenInfo.json ""
 	/usr/bin/cmake -E touch /home/stani/Документы/553501/ОАиП/LR10/Task1/build/Task1_autogen/timestamp
 
 Task1_autogen: CMakeFiles/Task1_autogen

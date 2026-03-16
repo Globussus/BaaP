@@ -15,10 +15,10 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     inputFio = new QLineEdit(this);
     inputFio->setPlaceholderText("ФИО для поиска/удаления");
 
-    QPushButton *btnLoad   = new QPushButton("Открыть", this);
-    QPushButton *btnSave   = new QPushButton("Сохранить", this);
-    QPushButton *btnAdd    = new QPushButton("Добавить", this);
-    QPushButton *btnDel    = new QPushButton("Удалить", this);
+    QPushButton *btnLoad = new QPushButton("Открыть", this);
+    QPushButton *btnSave = new QPushButton("Сохранить", this);
+    QPushButton *btnAdd = new QPushButton("Добавить", this);
+    QPushButton *btnDel = new QPushButton("Удалить", this);
     QPushButton *btnSortAll = new QPushButton("Сорт. всех", this);
     QPushButton *btnSortGrp = new QPushButton("Сорт. в группе", this);
     QPushButton *btnSearch = new QPushButton("Найти", this);
@@ -49,14 +49,14 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     setCentralWidget(centralWidget);
     resize(700, 500);
 
-    connect(btnLoad,    &QPushButton::clicked, this, &MainWindow::handleLoad);
-    connect(btnSave,    &QPushButton::clicked, this, &MainWindow::handleSave);
+    connect(btnLoad, &QPushButton::clicked, this, &MainWindow::handleLoad);
+    connect(btnSave, &QPushButton::clicked, this, &MainWindow::handleSave);
     connect(btnSortAll, &QPushButton::clicked, this, &MainWindow::handleSortAll);
     connect(btnSortGrp, &QPushButton::clicked, this, &MainWindow::handleSortGroup);
-    connect(btnSearch,  &QPushButton::clicked, this, &MainWindow::handleSearch);
-    connect(btnGood,    &QPushButton::clicked, this, &MainWindow::showGoodStudents);
-    connect(btnAdd,     &QPushButton::clicked, this, &MainWindow::handleAdd);
-    connect(btnDel,     &QPushButton::clicked, this, &MainWindow::handleDelete);
+    connect(btnSearch, &QPushButton::clicked, this, &MainWindow::handleSearch);
+    connect(btnGood, &QPushButton::clicked, this, &MainWindow::showGoodStudents);
+    connect(btnAdd, &QPushButton::clicked, this, &MainWindow::handleAdd);
+    connect(btnDel, &QPushButton::clicked, this, &MainWindow::handleDelete);
 }
 
 MainWindow::~MainWindow() {

@@ -1,0 +1,9 @@
+/home/stani/Документы/553501/ОАиП/LR10/build/CMakeFiles/Task1.dir
+/home/stani/Документы/553501/ОАиП/LR10/build/CMakeFiles/edit_cache.dir
+/home/stani/Документы/553501/ОАиП/LR10/build/CMakeFiles/rebuild_cache.dir
+/home/stani/Документы/553501/ОАиП/LR10/build/CMakeFiles/list_install_components.dir
+/home/stani/Документы/553501/ОАиП/LR10/build/CMakeFiles/install.dir
+/home/stani/Документы/553501/ОАиП/LR10/build/CMakeFiles/install/local.dir
+/home/stani/Документы/553501/ОАиП/LR10/build/CMakeFiles/install/strip.dir
+/home/stani/Документы/553501/ОАиП/LR10/build/CMakeFiles/Task1_autogen_timestamp_deps.dir
+/home/stani/Документы/553501/ОАиП/LR10/build/CMakeFiles/Task1_autogen.dir

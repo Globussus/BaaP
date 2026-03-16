@@ -7,4 +7,4 @@ public:
     virtual double evaluate() = 0;
 };
 
-#endif // EXPRESSION_H
+#endif

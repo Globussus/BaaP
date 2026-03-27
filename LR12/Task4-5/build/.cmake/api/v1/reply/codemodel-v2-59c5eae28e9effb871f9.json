@@ -1,0 +1,105 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "VectorQtProject",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "MyVector::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MyVector-Debug-8bdee3f85b8ce67b021f.json",
+					"name" : "MyVector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MyVector_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MyVector_autogen-Debug-76aa57ab81f6ec6e2d62.json",
+					"name" : "MyVector_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MyVector_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MyVector_autogen_timestamp_deps-Debug-ca252938077006b25983.json",
+					"name" : "MyVector_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Task4-5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task4-5-Debug-28bbb135622ae78b6014.json",
+					"name" : "Task4-5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Task4-5_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task4-5_autogen-Debug-2945bf044b8a8eae87a2.json",
+					"name" : "Task4-5_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Task4-5_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task4-5_autogen_timestamp_deps-Debug-3dad8e8d89325903150f.json",
+					"name" : "Task4-5_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/stani/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/553501/\u041e\u0410\u0438\u041f/LR12/Task4-5/build",
+		"source" : "/home/stani/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/553501/\u041e\u0410\u0438\u041f/LR12/Task4-5"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

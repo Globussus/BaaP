@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build",
+  "command": "/usr/bin/c++  -I/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/MyVector_autogen/include -I/home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs -g -std=gnu++17 -o CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.o -c /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/MyVector_autogen/mocs_compilation.cpp",
+  "file": "/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/MyVector_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build",
+  "command": "/usr/bin/c++  -I/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/MyVector_autogen/include -I/home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs -g -std=gnu++17 -o CMakeFiles/MyVector.dir/include/libs/vector.cpp.o -c /home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs/vector.cpp",
+  "file": "/home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs/vector.cpp",
+  "output": "CMakeFiles/MyVector.dir/include/libs/vector.cpp.o"
+},
+{
+  "directory": "/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/Task4-5_autogen/include -I/home/stani/Документы/553501/ОАиП/LR12/Task4-5/include -I/home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.o -c /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/Task4-5_autogen/mocs_compilation.cpp",
+  "file": "/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/Task4-5_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/Task4-5_autogen/include -I/home/stani/Документы/553501/ОАиП/LR12/Task4-5/include -I/home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task4-5.dir/src/main.cpp.o -c /home/stani/Документы/553501/ОАиП/LR12/Task4-5/src/main.cpp",
+  "file": "/home/stani/Документы/553501/ОАиП/LR12/Task4-5/src/main.cpp",
+  "output": "CMakeFiles/Task4-5.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/Task4-5_autogen/include -I/home/stani/Документы/553501/ОАиП/LR12/Task4-5/include -I/home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task4-5.dir/src/mainwindow.cpp.o -c /home/stani/Документы/553501/ОАиП/LR12/Task4-5/src/mainwindow.cpp",
+  "file": "/home/stani/Документы/553501/ОАиП/LR12/Task4-5/src/mainwindow.cpp",
+  "output": "CMakeFiles/Task4-5.dir/src/mainwindow.cpp.o"
+}
+]

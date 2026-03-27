@@ -129,29 +129,55 @@ Task1-3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task1-3.dir/build.make CMakeFiles/Task1-3.dir/build
 .PHONY : Task1-3/fast
 
-src/contextmenu.o: src/contextmenu.cpp.o
-.PHONY : src/contextmenu.o
+#=============================================================================
+# Target rules for targets named Task1-3_autogen_timestamp_deps
+
+# Build rule for target.
+Task1-3_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Task1-3_autogen_timestamp_deps
+.PHONY : Task1-3_autogen_timestamp_deps
+
+# fast build rule for target.
+Task1-3_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task1-3_autogen_timestamp_deps.dir/build.make CMakeFiles/Task1-3_autogen_timestamp_deps.dir/build
+.PHONY : Task1-3_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named Task1-3_autogen
+
+# Build rule for target.
+Task1-3_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Task1-3_autogen
+.PHONY : Task1-3_autogen
+
+# fast build rule for target.
+Task1-3_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task1-3_autogen.dir/build.make CMakeFiles/Task1-3_autogen.dir/build
+.PHONY : Task1-3_autogen/fast
+
+Task1-3_autogen/mocs_compilation.o: Task1-3_autogen/mocs_compilation.cpp.o
+.PHONY : Task1-3_autogen/mocs_compilation.o
 
 # target to build an object file
-src/contextmenu.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task1-3.dir/build.make CMakeFiles/Task1-3.dir/src/contextmenu.cpp.o
-.PHONY : src/contextmenu.cpp.o
+Task1-3_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task1-3.dir/build.make CMakeFiles/Task1-3.dir/Task1-3_autogen/mocs_compilation.cpp.o
+.PHONY : Task1-3_autogen/mocs_compilation.cpp.o
 
-src/contextmenu.i: src/contextmenu.cpp.i
-.PHONY : src/contextmenu.i
+Task1-3_autogen/mocs_compilation.i: Task1-3_autogen/mocs_compilation.cpp.i
+.PHONY : Task1-3_autogen/mocs_compilation.i
 
 # target to preprocess a source file
-src/contextmenu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task1-3.dir/build.make CMakeFiles/Task1-3.dir/src/contextmenu.cpp.i
-.PHONY : src/contextmenu.cpp.i
+Task1-3_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task1-3.dir/build.make CMakeFiles/Task1-3.dir/Task1-3_autogen/mocs_compilation.cpp.i
+.PHONY : Task1-3_autogen/mocs_compilation.cpp.i
 
-src/contextmenu.s: src/contextmenu.cpp.s
-.PHONY : src/contextmenu.s
+Task1-3_autogen/mocs_compilation.s: Task1-3_autogen/mocs_compilation.cpp.s
+.PHONY : Task1-3_autogen/mocs_compilation.s
 
 # target to generate assembly for a file
-src/contextmenu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task1-3.dir/build.make CMakeFiles/Task1-3.dir/src/contextmenu.cpp.s
-.PHONY : src/contextmenu.cpp.s
+Task1-3_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task1-3.dir/build.make CMakeFiles/Task1-3.dir/Task1-3_autogen/mocs_compilation.cpp.s
+.PHONY : Task1-3_autogen/mocs_compilation.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -176,6 +202,30 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task1-3.dir/build.make CMakeFiles/Task1-3.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/mainwindow.o: src/mainwindow.cpp.o
+.PHONY : src/mainwindow.o
+
+# target to build an object file
+src/mainwindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task1-3.dir/build.make CMakeFiles/Task1-3.dir/src/mainwindow.cpp.o
+.PHONY : src/mainwindow.cpp.o
+
+src/mainwindow.i: src/mainwindow.cpp.i
+.PHONY : src/mainwindow.i
+
+# target to preprocess a source file
+src/mainwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task1-3.dir/build.make CMakeFiles/Task1-3.dir/src/mainwindow.cpp.i
+.PHONY : src/mainwindow.cpp.i
+
+src/mainwindow.s: src/mainwindow.cpp.s
+.PHONY : src/mainwindow.s
+
+# target to generate assembly for a file
+src/mainwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Task1-3.dir/build.make CMakeFiles/Task1-3.dir/src/mainwindow.cpp.s
+.PHONY : src/mainwindow.cpp.s
 
 src/tools.o: src/tools.cpp.o
 .PHONY : src/tools.o
@@ -209,13 +259,18 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Task1-3_autogen"
+	@echo "... Task1-3_autogen_timestamp_deps"
 	@echo "... Task1-3"
-	@echo "... src/contextmenu.o"
-	@echo "... src/contextmenu.i"
-	@echo "... src/contextmenu.s"
+	@echo "... Task1-3_autogen/mocs_compilation.o"
+	@echo "... Task1-3_autogen/mocs_compilation.i"
+	@echo "... Task1-3_autogen/mocs_compilation.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/mainwindow.o"
+	@echo "... src/mainwindow.i"
+	@echo "... src/mainwindow.s"
 	@echo "... src/tools.o"
 	@echo "... src/tools.i"
 	@echo "... src/tools.s"

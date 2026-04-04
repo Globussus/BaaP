@@ -9,9 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "Task4-5_autogen/timestamp" "custom" "Task4-5_autogen/deps"
-  "/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/Task4-5_autogen/mocs_compilation.cpp" "CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.o.d"
-  "/home/stani/Документы/553501/ОАиП/LR12/Task4-5/src/main.cpp" "CMakeFiles/Task4-5.dir/src/main.cpp.o" "gcc" "CMakeFiles/Task4-5.dir/src/main.cpp.o.d"
-  "/home/stani/Документы/553501/ОАиП/LR12/Task4-5/src/mainwindow.cpp" "CMakeFiles/Task4-5.dir/src/mainwindow.cpp.o" "gcc" "CMakeFiles/Task4-5.dir/src/mainwindow.cpp.o.d"
+  "/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/Task4-5_autogen/mocs_compilation.cpp" "CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.o.d"
+  "/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/src/main.cpp" "CMakeFiles/Task4-5.dir/src/main.cpp.o" "gcc" "CMakeFiles/Task4-5.dir/src/main.cpp.o.d"
+  "/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/src/mainwindow.cpp" "CMakeFiles/Task4-5.dir/src/mainwindow.cpp.o" "gcc" "CMakeFiles/Task4-5.dir/src/mainwindow.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

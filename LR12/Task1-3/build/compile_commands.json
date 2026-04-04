@@ -1,26 +1,26 @@
 [
 {
-  "directory": "/home/stani/Документы/553501/ОАиП/LR12/Task1-3/build",
-  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/stani/Документы/553501/ОАиП/LR12/Task1-3/build/Task1-3_autogen/include -I/home/stani/Документы/553501/ОАиП/LR12/Task1-3/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task1-3.dir/Task1-3_autogen/mocs_compilation.cpp.o -c /home/stani/Документы/553501/ОАиП/LR12/Task1-3/build/Task1-3_autogen/mocs_compilation.cpp",
-  "file": "/home/stani/Документы/553501/ОАиП/LR12/Task1-3/build/Task1-3_autogen/mocs_compilation.cpp",
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build/Task1-3_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task1-3.dir/Task1-3_autogen/mocs_compilation.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build/Task1-3_autogen/mocs_compilation.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build/Task1-3_autogen/mocs_compilation.cpp",
   "output": "CMakeFiles/Task1-3.dir/Task1-3_autogen/mocs_compilation.cpp.o"
 },
 {
-  "directory": "/home/stani/Документы/553501/ОАиП/LR12/Task1-3/build",
-  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/stani/Документы/553501/ОАиП/LR12/Task1-3/build/Task1-3_autogen/include -I/home/stani/Документы/553501/ОАиП/LR12/Task1-3/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task1-3.dir/src/main.cpp.o -c /home/stani/Документы/553501/ОАиП/LR12/Task1-3/src/main.cpp",
-  "file": "/home/stani/Документы/553501/ОАиП/LR12/Task1-3/src/main.cpp",
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build/Task1-3_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task1-3.dir/src/main.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/src/main.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/src/main.cpp",
   "output": "CMakeFiles/Task1-3.dir/src/main.cpp.o"
 },
 {
-  "directory": "/home/stani/Документы/553501/ОАиП/LR12/Task1-3/build",
-  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/stani/Документы/553501/ОАиП/LR12/Task1-3/build/Task1-3_autogen/include -I/home/stani/Документы/553501/ОАиП/LR12/Task1-3/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task1-3.dir/src/tools.cpp.o -c /home/stani/Документы/553501/ОАиП/LR12/Task1-3/src/tools.cpp",
-  "file": "/home/stani/Документы/553501/ОАиП/LR12/Task1-3/src/tools.cpp",
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build/Task1-3_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task1-3.dir/src/tools.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/src/tools.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/src/tools.cpp",
   "output": "CMakeFiles/Task1-3.dir/src/tools.cpp.o"
 },
 {
-  "directory": "/home/stani/Документы/553501/ОАиП/LR12/Task1-3/build",
-  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/stani/Документы/553501/ОАиП/LR12/Task1-3/build/Task1-3_autogen/include -I/home/stani/Документы/553501/ОАиП/LR12/Task1-3/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task1-3.dir/src/mainwindow.cpp.o -c /home/stani/Документы/553501/ОАиП/LR12/Task1-3/src/mainwindow.cpp",
-  "file": "/home/stani/Документы/553501/ОАиП/LR12/Task1-3/src/mainwindow.cpp",
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build/Task1-3_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task1-3.dir/src/mainwindow.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/src/mainwindow.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/src/mainwindow.cpp",
   "output": "CMakeFiles/Task1-3.dir/src/mainwindow.cpp.o"
 }
 ]

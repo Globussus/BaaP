@@ -9,10 +9,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "Task1-3_autogen/timestamp" "custom" "Task1-3_autogen/deps"
-  "/home/stani/Документы/553501/ОАиП/LR12/Task1-3/build/Task1-3_autogen/mocs_compilation.cpp" "CMakeFiles/Task1-3.dir/Task1-3_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/Task1-3.dir/Task1-3_autogen/mocs_compilation.cpp.o.d"
-  "/home/stani/Документы/553501/ОАиП/LR12/Task1-3/src/main.cpp" "CMakeFiles/Task1-3.dir/src/main.cpp.o" "gcc" "CMakeFiles/Task1-3.dir/src/main.cpp.o.d"
-  "/home/stani/Документы/553501/ОАиП/LR12/Task1-3/src/mainwindow.cpp" "CMakeFiles/Task1-3.dir/src/mainwindow.cpp.o" "gcc" "CMakeFiles/Task1-3.dir/src/mainwindow.cpp.o.d"
-  "/home/stani/Документы/553501/ОАиП/LR12/Task1-3/src/tools.cpp" "CMakeFiles/Task1-3.dir/src/tools.cpp.o" "gcc" "CMakeFiles/Task1-3.dir/src/tools.cpp.o.d"
+  "/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build/Task1-3_autogen/mocs_compilation.cpp" "CMakeFiles/Task1-3.dir/Task1-3_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/Task1-3.dir/Task1-3_autogen/mocs_compilation.cpp.o.d"
+  "/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/src/main.cpp" "CMakeFiles/Task1-3.dir/src/main.cpp.o" "gcc" "CMakeFiles/Task1-3.dir/src/main.cpp.o.d"
+  "/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/src/mainwindow.cpp" "CMakeFiles/Task1-3.dir/src/mainwindow.cpp.o" "gcc" "CMakeFiles/Task1-3.dir/src/mainwindow.cpp.o.d"
+  "/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/src/tools.cpp" "CMakeFiles/Task1-3.dir/src/tools.cpp.o" "gcc" "CMakeFiles/Task1-3.dir/src/tools.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

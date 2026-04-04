@@ -1,8 +1,8 @@
-/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles/MyVector.dir
-/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles/Task4-5.dir
-/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles/edit_cache.dir
-/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles/rebuild_cache.dir
-/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles/MyVector_autogen_timestamp_deps.dir
-/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles/MyVector_autogen.dir
-/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles/Task4-5_autogen_timestamp_deps.dir
-/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles/Task4-5_autogen.dir
+/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles/MyVector.dir
+/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles/Task4-5.dir
+/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles/edit_cache.dir
+/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles/rebuild_cache.dir
+/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles/MyVector_autogen_timestamp_deps.dir
+/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles/MyVector_autogen.dir
+/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles/Task4-5_autogen_timestamp_deps.dir
+/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles/Task4-5_autogen.dir

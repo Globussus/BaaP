@@ -1,190 +1,279 @@
 #include "mainwindow.h"
+#include <QVBoxLayout>
+#include <QHBoxLayout>
+#include <QGroupBox>
+#include <QInputDialog>
+#include <QMessageBox>
+#include <QComboBox>
+#include <QStringList>
+#include <stdexcept>
 
-MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent) {
+MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
+    setWindowTitle("Vector и Pair");
+    resize(1200, 850);
+    
     setupUI();
-    Pair<Vector<int>, Vector<Pair<int, double>>> initial;
-    mainData.push_back(initial);
-    refreshGrids();
+    connectSignals();
+    updateTables();
 }
 
-MainWindow::~MainWindow() {}
+MainWindow::~MainWindow() = default;
 
 void MainWindow::setupUI() {
-    this->resize(1150, 650);
-    this->setWindowTitle("Vector и Pair");
-
-    centralWidget = new QWidget(this);
+    auto* centralWidget = new QWidget(this);
     setCentralWidget(centralWidget);
+    auto* mainLayout = new QVBoxLayout(centralWidget);
 
-    QLabel* label1 = new QLabel("Первая пара (Vector<int>):", centralWidget);
-    label1->setGeometry(20, 15, 250, 20);
-    tableInts = new QTableWidget(centralWidget);
-    tableInts->setGeometry(20, 40, 300, 550);
-    tableInts->setColumnCount(1);
-    tableInts->setHorizontalHeaderLabels({"Столбец 1"});
+    auto* selectorGroup = new QGroupBox("Выбор контейнера для операций");
+    auto* selectorLayout = new QHBoxLayout(selectorGroup);
+    vectorSelector = new QComboBox();
+    vectorSelector->addItem("(Vector<int>)", 0);
+    vectorSelector->addItem("(Vector<Pair<int, double>>)", 1);
+    selectorLayout->addWidget(new QLabel("Работать с:"));
+    selectorLayout->addWidget(vectorSelector);
+    mainLayout->addWidget(selectorGroup);
 
-    QLabel* label2 = new QLabel("Вторая пара (Vector<Pair<int, double>>):", centralWidget);
-    label2->setGeometry(340, 15, 300, 20);
-    tablePairs = new QTableWidget(centralWidget);
-    tablePairs->setGeometry(340, 40, 360, 550);
-    tablePairs->setColumnCount(2);
-    tablePairs->setHorizontalHeaderLabels({"Целое", "Дробное"});
+    auto* tablesLayout = new QHBoxLayout();
+    table1_ = new QTableWidget();
+    table2_ = new QTableWidget();
+    tablesLayout->addWidget(table1_);
+    tablesLayout->addWidget(table2_);
+    mainLayout->addLayout(tablesLayout);
 
-    int bx = 720, by = 40, bw = 200, bh = 30;
+    auto* btnGroup = new QGroupBox("Методы управления");
+    auto* grid = new QGridLayout(btnGroup);
 
-    QLabel* vHeader = new QLabel("Функции Vector:", centralWidget);
-    vHeader->setGeometry(bx, by - 25, bw, 20);
-    vHeader->setStyleSheet("font-weight: bold;");
+    btnPushBack = new QPushButton("Push Back");
+    btnPopBack = new QPushButton("Pop Back");
+    btnInsert = new QPushButton("Insert");
+    btnErase = new QPushButton("Erase");
+    btnResize = new QPushButton("Resize");
+    btnClear = new QPushButton("Clear");
+    btnAssign = new QPushButton("Assign");
+    btnSwap = new QPushButton("Swap");
+    btnAt = new QPushButton("At");
+    btnFrontBack = new QPushButton("Front/Back");
+    btnReserve = new QPushButton("Reserve");
 
-    auto btnV = [&](QString name, auto slot) {
-        QPushButton* b = new QPushButton(name, centralWidget);
-        b->setGeometry(bx, by, bw, bh);
-        connect(b, &QPushButton::clicked, this, slot);
-        by += 35;
-    };
-
-    btnV("push_back", &MainWindow::onPushBack);
-    btnV("pop_back", &MainWindow::onPopBack);
-    btnV("insert (в начало)", &MainWindow::onInsert);
-    btnV("erase (в начале)", &MainWindow::onErase);
-    btnV("assign (5 элементов)", &MainWindow::onAssign);
-    btnV("resize", &MainWindow::onResize);
-    btnV("at (доступ по индексу)", &MainWindow::onAt);
-    btnV("front / back", &MainWindow::onFrontBack);
-    btnV("clear", &MainWindow::onClear);
-
-    by += 20;
-    QLabel* pHeader = new QLabel("Функции Pair:", centralWidget);
-    pHeader->setGeometry(bx, by, bw, 20);
-    pHeader->setStyleSheet("font-weight: bold; color: darkblue;");
-    by += 25;
-
-    auto btnP = [&](QString name, auto slot) {
-        QPushButton* b = new QPushButton(name, centralWidget);
-        b->setGeometry(bx, by, bw, bh);
-        connect(b, &QPushButton::clicked, this, slot);
-        by += 35;
-    };
-
-    btnP("make_pair (пересоздать)", &MainWindow::onPairMake);
-    btnP("Заполнить first", &MainWindow::onPairSetFirst);
-    btnP("Заполнить second", &MainWindow::onPairSetSecond);
-    btnP("Вложенная пара (тест)", &MainWindow::onShowNested);
-}
-
-void MainWindow::refreshGrids() {
-    if (mainData.empty()) return;
-    auto& p = mainData[0];
+    grid->addWidget(btnPushBack, 0, 0); grid->addWidget(btnPopBack, 0, 1); grid->addWidget(btnInsert, 0, 2);
+    grid->addWidget(btnErase, 1, 0);   grid->addWidget(btnResize, 1, 1); grid->addWidget(btnClear, 1, 2);
+    grid->addWidget(btnAssign, 2, 0);  grid->addWidget(btnSwap, 2, 1);   grid->addWidget(btnAt, 2, 2);
+    grid->addWidget(btnFrontBack, 3, 0); grid->addWidget(btnReserve, 3, 1);
     
-    tableInts->setRowCount(p.first.size());
-    for(size_t i = 0; i < p.first.size(); ++i) {
-        tableInts->setItem(i, 0, new QTableWidgetItem(QString::number(p.first[i])));
-    }
+    mainLayout->addWidget(btnGroup);
+}
 
-    tablePairs->setRowCount(p.second.size());
-    for(size_t i = 0; i < p.second.size(); ++i) {
-        tablePairs->setItem(i, 0, new QTableWidgetItem(QString::number(p.second[i].first)));
-        tablePairs->setItem(i, 1, new QTableWidgetItem(QString::number(p.second[i].second)));
+void MainWindow::connectSignals() {
+    connect(btnPushBack, &QPushButton::clicked, this, &MainWindow::demonstratePushBack);
+    connect(btnPopBack, &QPushButton::clicked, this, &MainWindow::demonstratePopBack);
+    connect(btnInsert, &QPushButton::clicked, this, &MainWindow::demonstrateInsert);
+    connect(btnErase, &QPushButton::clicked, this, &MainWindow::demonstrateErase);
+    connect(btnResize, &QPushButton::clicked, this, &MainWindow::demonstrateResize);
+    connect(btnClear, &QPushButton::clicked, this, &MainWindow::demonstrateClear);
+    connect(btnAssign, &QPushButton::clicked, this, &MainWindow::demonstrateAssign);
+    connect(btnSwap, &QPushButton::clicked, this, &MainWindow::demonstrateSwap);
+    connect(btnAt, &QPushButton::clicked, this, &MainWindow::demonstrateAt);
+    connect(btnFrontBack, &QPushButton::clicked, this, &MainWindow::demonstrateFrontBack);
+}
+
+void MainWindow::updateTables() {
+    table1_->clear();
+    table1_->setRowCount(data_.first.size());
+    table1_->setColumnCount(1);
+    table1_->setHorizontalHeaderLabels({"int"});
+    for(size_t i = 0; i < data_.first.size(); ++i)
+        table1_->setItem(i, 0, new QTableWidgetItem(QString::number(data_.first[i])));
+
+    table2_->clear();
+    table2_->setRowCount(data_.second.size());
+    table2_->setColumnCount(2);
+    table2_->setHorizontalHeaderLabels({"int", "double"});
+    for(size_t i = 0; i < data_.second.size(); ++i) {
+        table2_->setItem(i, 0, new QTableWidgetItem(QString::number(data_.second[i].first)));
+        table2_->setItem(i, 1, new QTableWidgetItem(QString::number(data_.second[i].second, 'f', 2)));
     }
 }
 
-void MainWindow::onPushBack() {
+void MainWindow::demonstrateInsert() {
+    int target = vectorSelector->currentIndex();
+    size_t currentSize = (target == 0) ? data_.first.size() : data_.second.size();
+    
     bool ok;
-    int val = QInputDialog::getInt(this, "Ввод", "Введите число:", 0, -1000, 1000, 1, &ok);
-    if(ok) {
-        mainData[0].first.push_back(val);
-        refreshGrids();
+    int idx = QInputDialog::getInt(this, "Insert", "Введите индекс для вставки:", 0, 0, currentSize, 1, &ok);
+    if (!ok) return;
+
+    if (target == 0) {
+        int val = QInputDialog::getInt(this, "Insert (Vector 1)", "Введите число (int):", 0, -1000, 1000, 1, &ok);
+        if (ok) {
+            auto it = data_.first.begin();
+            for(int i = 0; i < idx; ++i) ++it;
+            data_.first.insert(it, val);
+        }
+    } else {
+        int v1 = QInputDialog::getInt(this, "Insert (Vector 2)", "Введите целое (int):", 0, -1000, 1000, 1, &ok);
+        if (!ok) return;
+        double v2 = QInputDialog::getDouble(this, "Insert (Vector 2)", "Введите дробное (double):", 0.0, -1000, 1000, 2, &ok);
+        if (ok) {
+            auto it = data_.second.begin();
+            for(int i = 0; i < idx; ++i) ++it;
+            data_.second.insert(it, Pair<int, double>(v1, v2));
+        }
     }
+    updateTables();
 }
 
-void MainWindow::onPopBack() {
-    if(!mainData[0].first.empty()) {
-        mainData[0].first.pop_back();
-        refreshGrids();
-    }
-}
+#include <stdexcept>
 
-void MainWindow::onInsert() {
+void MainWindow::demonstrateSwap() {
+    int target = vectorSelector->currentIndex();
     bool ok;
-    int n = QInputDialog::getInt(this, "Число", "Введите число:", 0, 0, 100, 1, &ok);
-    if(ok) {
-        mainData[0].first.insert(mainData[0].first.begin(), n);
-        refreshGrids();
+    
+    int count = QInputDialog::getInt(this, "Swap", 
+        "Введите количество элементов для нового вектора:", 1, 1, 100, 1, &ok);
+    
+    if (!ok) return;
+
+    try {
+        if (target == 0) {
+            Vector<int> temp;
+            for (int i = 0; i < count; ++i) {
+                QString valStr = QInputDialog::getText(this, "Ввод элементов", 
+                    QString("Элемент [%1] (int):").arg(i), QLineEdit::Normal, "", &ok);
+                
+                if (!ok) return;
+
+                bool canConvert;
+                int val = valStr.toInt(&canConvert);
+                
+                if (!canConvert) {
+                    throw std::invalid_argument("Значение '" + valStr.toStdString() + "' не является целым числом!");
+                }
+                temp.push_back(val);
+            }
+            data_.first.swap(temp);
+            QMessageBox::information(this, "Успех", "Обмен для Матрицы 1 выполнен.");
+            
+        } else {
+            Vector<Pair<int, double>> temp;
+            for (int i = 0; i < count; ++i) {
+                QString intStr = QInputDialog::getText(this, "Ввод Pair", 
+                    QString("Пара [%1] - Введите INT:").arg(i), QLineEdit::Normal, "", &ok);
+                if (!ok) return;
+
+                bool canConvertInt;
+                int v1 = intStr.toInt(&canConvertInt);
+                if (!canConvertInt) {
+                    throw std::invalid_argument("Значение '" + intStr.toStdString() + "' не является целым числом (int)!");
+                }
+
+                QString doubleStr = QInputDialog::getText(this, "Ввод Pair", 
+                    QString("Пара [%1] - Введите DOUBLE:").arg(i), QLineEdit::Normal, "", &ok);
+                if (!ok) return;
+
+                bool canConvertDouble;
+                double v2 = doubleStr.toDouble(&canConvertDouble);
+                if (!canConvertDouble) {
+                    throw std::invalid_argument("Значение '" + doubleStr.toStdString() + "' не является числом (double)!");
+                }
+
+                temp.push_back(Pair<int, double>(v1, v2));
+            }
+            data_.second.swap(temp);
+            QMessageBox::information(this, "Успех", "Обмен для Матрицы 2 выполнен.");
+        }
+        
+        updateTables();
+
+    } catch (const std::invalid_argument& e) {
+        QMessageBox::critical(this, "Ошибка типа данных", 
+            QString("Ошибка: %1").arg(e.what()));
+    } catch (const std::exception& e) {
+        QMessageBox::critical(this, "Ошибка", e.what());
+    } catch (...) {
+        QMessageBox::critical(this, "Ошибка", "Произошла непредвиденная ошибка.");
     }
 }
 
-void MainWindow::onErase() {
-    if(!mainData[0].first.empty()) {
-        mainData[0].first.erase(mainData[0].first.begin());
-        refreshGrids();
-    }
-}
-
-void MainWindow::onAssign() {
-    bool ok1, ok2;
-    int size = QInputDialog::getInt(this, "Размер", "Введите размер:", 0, 0, 100, 1, &ok1);
-    int number = QInputDialog::getInt(this, "Число", "Введите число:", 0, 0, 100, 1, &ok2);
-    if (ok1 && ok2) {
-        mainData[0].first.assign(size, number);
-        refreshGrids();
-    }
-}
-
-void MainWindow::onResize() {
+void MainWindow::demonstratePushBack() {
     bool ok;
-    int n = QInputDialog::getInt(this, "Размер", "Новый размер:", 0, 0, 100, 1, &ok);
-    if(ok) {
-        mainData[0].first.resize(n, 0);
-        refreshGrids();
+    if (vectorSelector->currentIndex() == 0) {
+        int val = QInputDialog::getInt(this, "Push", "Значение:", 0, -1000, 1000, 1, &ok);
+        if(ok) data_.first.push_back(val);
+    } else {
+        int v1 = QInputDialog::getInt(this, "Push", "int:", 0, -1000, 1000, 1, &ok);
+        double v2 = QInputDialog::getDouble(this, "Push", "double:", 0.0, -1000, 1000, 2, &ok);
+        if(ok) data_.second.push_back(Pair<int, double>(v1, v2));
     }
+    updateTables();
 }
 
-void MainWindow::onAt() {
-    if(mainData[0].first.empty()) return;
+void MainWindow::demonstratePopBack() {
+    if (vectorSelector->currentIndex() == 0 && !data_.first.empty()) data_.first.pop_back();
+    else if (vectorSelector->currentIndex() == 1 && !data_.second.empty()) data_.second.pop_back();
+    updateTables();
+}
+
+void MainWindow::demonstrateErase() {
+    int target = vectorSelector->currentIndex();
+    size_t size = (target == 0) ? data_.first.size() : data_.second.size();
+    if (size == 0) return;
     bool ok;
-    int idx = QInputDialog::getInt(this, "Доступ", "Индекс:", 0, 0, mainData[0].first.size()-1, 1, &ok);
-    if(ok) {
-        QMessageBox::information(this, "Результат", "Значение: " + QString::number(mainData[0].first.at(idx)));
+    int idx = QInputDialog::getInt(this, "Erase", "Индекс:", 0, 0, size - 1, 1, &ok);
+    if (ok) {
+        if (target == 0) {
+            auto it = data_.first.begin();
+            for(int i = 0; i < idx; ++i) ++it;
+            data_.first.erase(it);
+        } else {
+            auto it = data_.second.begin();
+            for(int i = 0; i < idx; ++i) ++it;
+            data_.second.erase(it);
+        }
+        updateTables();
     }
 }
 
-void MainWindow::onFrontBack() {
-    if(mainData[0].first.empty()) return;
-    QString res = QString("Первый: %1\nПоследний: %2")
-                  .arg(mainData[0].first.front())
-                  .arg(mainData[0].first.back());
-    QMessageBox::information(this, "Доступ", res);
+void MainWindow::demonstrateResize() {
+    bool ok;
+    int n = QInputDialog::getInt(this, "Resize", "Размер:", 0, 0, 100, 1, &ok);
+    if (ok) {
+        if (vectorSelector->currentIndex() == 0) data_.first.resize(n, 0);
+        else data_.second.resize(n, Pair<int, double>(0, 0.0));
+        updateTables();
+    }
 }
 
-void MainWindow::onClear() {
-    mainData[0].first.clear();
-    refreshGrids();
+void MainWindow::demonstrateAssign() {
+    bool ok;
+    int n = QInputDialog::getInt(this, "Assign", "Кол-во:", 5, 1, 50, 1, &ok);
+    if (ok) {
+        if (vectorSelector->currentIndex() == 0) data_.first.assign(n, 1);
+        else data_.second.assign(n, Pair<int, double>(1, 1.0));
+        updateTables();
+    }
 }
 
-void MainWindow::onPairMake() {
-    Vector<int> v1;
-    Vector<Pair<int, double>> v2;
-    mainData[0] = Pair<Vector<int>, Vector<Pair<int, double>>>::make_pair(v1, v2);
-    refreshGrids();
+void MainWindow::demonstrateAt() {
+    int target = vectorSelector->currentIndex();
+    size_t size = (target == 0) ? data_.first.size() : data_.second.size();
+    if (size == 0) return;
+    bool ok;
+    int idx = QInputDialog::getInt(this, "At", "Индекс:", 0, 0, size - 1, 1, &ok);
+    if (ok) {
+        if (target == 0) QMessageBox::information(this, "At", QString::number(data_.first.at(idx)));
+        else QMessageBox::information(this, "At", QString("(%1, %2)").arg(data_.second.at(idx).first).arg(data_.second.at(idx).second));
+    }
 }
 
-void MainWindow::onPairSetFirst() {
-    mainData[0].first.clear();
-    for(int i = 0; i < 5; i++) mainData[0].first.push_back(i * 11);
-    refreshGrids();
+void MainWindow::demonstrateFrontBack() {
+    if (vectorSelector->currentIndex() == 0 && !data_.first.empty())
+        QMessageBox::information(this, "Front/Back", QString("F: %1, B: %2").arg(data_.first.front()).arg(data_.first.back()));
+    else if (!data_.second.empty())
+        QMessageBox::information(this, "Front/Back", "Элементы в таблице 2");
 }
 
-void MainWindow::onPairSetSecond() {
-    mainData[0].second.clear();
-    mainData[0].second.push_back(Pair<int, double>(1, 1.1));
-    mainData[0].second.push_back(Pair<int, double>(2, 2.2));
-    refreshGrids();
-}
-
-void MainWindow::onShowNested() {
-    Pair<Pair<int, int>, Pair<int, int>> a(Pair<int, int>(10, 20), Pair<int, int>(30, 40));
-    QString out = QString("Вложенная пара:\n((%1, %2), (%3, %4))")
-                  .arg(a.first.first).arg(a.first.second)
-                  .arg(a.second.first).arg(a.second.second);
-    QMessageBox::information(this, "Тест вложенности", out);
+void MainWindow::demonstrateClear() {
+    if (vectorSelector->currentIndex() == 0) data_.first.clear();
+    else data_.second.clear();
+    updateTables();
 }

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stani/Документы/553501/ОАиП/LR12/Task4-5
+CMAKE_SOURCE_DIR = /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build
+CMAKE_BINARY_DIR = /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MyVector.dir/depend.make
@@ -72,37 +72,37 @@ include CMakeFiles/MyVector.dir/flags.make
 MyVector_autogen/timestamp: /usr/lib/qt6/libexec/moc
 MyVector_autogen/timestamp: /usr/lib/qt6/libexec/uic
 MyVector_autogen/timestamp: CMakeFiles/MyVector.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target MyVector"
-	/usr/bin/cmake -E cmake_autogen /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles/MyVector_autogen.dir/AutogenInfo.json Debug
-	/usr/bin/cmake -E touch /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/MyVector_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target MyVector"
+	/usr/bin/cmake -E cmake_autogen /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles/MyVector_autogen.dir/AutogenInfo.json Debug
+	/usr/bin/cmake -E touch /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/MyVector_autogen/timestamp
 
 CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.o: CMakeFiles/MyVector.dir/flags.make
 CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.o: MyVector_autogen/mocs_compilation.cpp
 CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.o: CMakeFiles/MyVector.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.o -MF CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.o -c /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/MyVector_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.o -MF CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/MyVector_autogen/mocs_compilation.cpp
 
 CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/MyVector_autogen/mocs_compilation.cpp > CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/MyVector_autogen/mocs_compilation.cpp > CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/MyVector_autogen/mocs_compilation.cpp -o CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/MyVector_autogen/mocs_compilation.cpp -o CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/MyVector.dir/include/libs/vector.cpp.o: CMakeFiles/MyVector.dir/flags.make
-CMakeFiles/MyVector.dir/include/libs/vector.cpp.o: /home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs/vector.cpp
+CMakeFiles/MyVector.dir/include/libs/vector.cpp.o: /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/include/libs/vector.cpp
 CMakeFiles/MyVector.dir/include/libs/vector.cpp.o: CMakeFiles/MyVector.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyVector.dir/include/libs/vector.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyVector.dir/include/libs/vector.cpp.o -MF CMakeFiles/MyVector.dir/include/libs/vector.cpp.o.d -o CMakeFiles/MyVector.dir/include/libs/vector.cpp.o -c /home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs/vector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyVector.dir/include/libs/vector.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyVector.dir/include/libs/vector.cpp.o -MF CMakeFiles/MyVector.dir/include/libs/vector.cpp.o.d -o CMakeFiles/MyVector.dir/include/libs/vector.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/include/libs/vector.cpp
 
 CMakeFiles/MyVector.dir/include/libs/vector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyVector.dir/include/libs/vector.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs/vector.cpp > CMakeFiles/MyVector.dir/include/libs/vector.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/include/libs/vector.cpp > CMakeFiles/MyVector.dir/include/libs/vector.cpp.i
 
 CMakeFiles/MyVector.dir/include/libs/vector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyVector.dir/include/libs/vector.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs/vector.cpp -o CMakeFiles/MyVector.dir/include/libs/vector.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/include/libs/vector.cpp -o CMakeFiles/MyVector.dir/include/libs/vector.cpp.s
 
 # Object files for target MyVector
 MyVector_OBJECTS = \
@@ -116,7 +116,7 @@ libMyVector.a: CMakeFiles/MyVector.dir/MyVector_autogen/mocs_compilation.cpp.o
 libMyVector.a: CMakeFiles/MyVector.dir/include/libs/vector.cpp.o
 libMyVector.a: CMakeFiles/MyVector.dir/build.make
 libMyVector.a: CMakeFiles/MyVector.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libMyVector.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libMyVector.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/MyVector.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyVector.dir/link.txt --verbose=$(VERBOSE)
 
@@ -129,6 +129,6 @@ CMakeFiles/MyVector.dir/clean:
 .PHONY : CMakeFiles/MyVector.dir/clean
 
 CMakeFiles/MyVector.dir/depend: MyVector_autogen/timestamp
-	cd /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stani/Документы/553501/ОАиП/LR12/Task4-5 /home/stani/Документы/553501/ОАиП/LR12/Task4-5 /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles/MyVector.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5 /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5 /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles/MyVector.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/MyVector.dir/depend
 

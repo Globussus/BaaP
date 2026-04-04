@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stani/Документы/553501/ОАиП/LR12/Task4-5
+CMAKE_SOURCE_DIR = /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build
+CMAKE_BINARY_DIR = /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build
 
 # Utility rule file for Task4-5_autogen_timestamp_deps.
 
@@ -67,9 +67,9 @@ include CMakeFiles/Task4-5_autogen_timestamp_deps.dir/compiler_depend.make
 include CMakeFiles/Task4-5_autogen_timestamp_deps.dir/progress.make
 
 CMakeFiles/Task4-5_autogen_timestamp_deps: libMyVector.a
-CMakeFiles/Task4-5_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
-CMakeFiles/Task4-5_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
 CMakeFiles/Task4-5_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
+CMakeFiles/Task4-5_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
+CMakeFiles/Task4-5_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 
 Task4-5_autogen_timestamp_deps: CMakeFiles/Task4-5_autogen_timestamp_deps
 Task4-5_autogen_timestamp_deps: CMakeFiles/Task4-5_autogen_timestamp_deps.dir/build.make
@@ -84,6 +84,6 @@ CMakeFiles/Task4-5_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/Task4-5_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/Task4-5_autogen_timestamp_deps.dir/depend:
-	cd /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stani/Документы/553501/ОАиП/LR12/Task4-5 /home/stani/Документы/553501/ОАиП/LR12/Task4-5 /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles/Task4-5_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5 /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5 /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles/Task4-5_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Task4-5_autogen_timestamp_deps.dir/depend
 

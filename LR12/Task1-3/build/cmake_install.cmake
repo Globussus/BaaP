@@ -1,4 +1,4 @@
-# Install script for directory: /home/stani/Документы/553501/ОАиП/LR12/Task1-3
+# Install script for directory: /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/stani/Документы/553501/ОАиП/LR12/Task1-3/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

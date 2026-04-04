@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stani/Документы/553501/ОАиП/LR12/Task4-5
+CMAKE_SOURCE_DIR = /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build
+CMAKE_BINARY_DIR = /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build
 
 # Utility rule file for MyVector_autogen_timestamp_deps.
 
@@ -66,8 +66,8 @@ include CMakeFiles/MyVector_autogen_timestamp_deps.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/MyVector_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/MyVector_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
 CMakeFiles/MyVector_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
+CMakeFiles/MyVector_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
 
 MyVector_autogen_timestamp_deps: CMakeFiles/MyVector_autogen_timestamp_deps
 MyVector_autogen_timestamp_deps: CMakeFiles/MyVector_autogen_timestamp_deps.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/MyVector_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/MyVector_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/MyVector_autogen_timestamp_deps.dir/depend:
-	cd /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stani/Документы/553501/ОАиП/LR12/Task4-5 /home/stani/Документы/553501/ОАиП/LR12/Task4-5 /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles/MyVector_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5 /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5 /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles/MyVector_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/MyVector_autogen_timestamp_deps.dir/depend
 

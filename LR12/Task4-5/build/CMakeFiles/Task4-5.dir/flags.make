@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/Task4-5_autogen/include -I/home/stani/Документы/553501/ОАиП/LR12/Task4-5/include -I/home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui
+CXX_INCLUDES = -I/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/Task4-5_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/include -I/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/include/libs -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui
 
 CXX_FLAGS = -g -std=gnu++17 -fPIC
 

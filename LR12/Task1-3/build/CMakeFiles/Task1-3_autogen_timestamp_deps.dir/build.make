@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stani/Документы/553501/ОАиП/LR12/Task1-3
+CMAKE_SOURCE_DIR = /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stani/Документы/553501/ОАиП/LR12/Task1-3/build
+CMAKE_BINARY_DIR = /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build
 
 # Utility rule file for Task1-3_autogen_timestamp_deps.
 
@@ -66,9 +66,9 @@ include CMakeFiles/Task1-3_autogen_timestamp_deps.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/Task1-3_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/Task1-3_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
-CMakeFiles/Task1-3_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
 CMakeFiles/Task1-3_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
+CMakeFiles/Task1-3_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
+CMakeFiles/Task1-3_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
 CMakeFiles/Task1-3_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 
 Task1-3_autogen_timestamp_deps: CMakeFiles/Task1-3_autogen_timestamp_deps
@@ -84,6 +84,6 @@ CMakeFiles/Task1-3_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/Task1-3_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/Task1-3_autogen_timestamp_deps.dir/depend:
-	cd /home/stani/Документы/553501/ОАиП/LR12/Task1-3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stani/Документы/553501/ОАиП/LR12/Task1-3 /home/stani/Документы/553501/ОАиП/LR12/Task1-3 /home/stani/Документы/553501/ОАиП/LR12/Task1-3/build /home/stani/Документы/553501/ОАиП/LR12/Task1-3/build /home/stani/Документы/553501/ОАиП/LR12/Task1-3/build/CMakeFiles/Task1-3_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3 /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3 /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build/CMakeFiles/Task1-3_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Task1-3_autogen_timestamp_deps.dir/depend
 

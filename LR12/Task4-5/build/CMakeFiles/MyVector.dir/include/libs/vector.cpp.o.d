@@ -1,7 +1,7 @@
 CMakeFiles/MyVector.dir/include/libs/vector.cpp.o: \
- /home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs/vector.cpp \
+ /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/include/libs/vector.cpp \
  /usr/include/stdc-predef.h \
- /home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs/vector.h \
+ /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/include/libs/vector.h \
  /usr/include/c++/13/cstdint \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -124,5 +124,5 @@ CMakeFiles/MyVector.dir/include/libs/vector.cpp.o: \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs/iterator.h \
- /home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs/reverse_iterator.h
+ /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/include/libs/iterator.h \
+ /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/include/libs/reverse_iterator.h

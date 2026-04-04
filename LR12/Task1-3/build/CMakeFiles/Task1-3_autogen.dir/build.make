@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stani/Документы/553501/ОАиП/LR12/Task1-3
+CMAKE_SOURCE_DIR = /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stani/Документы/553501/ОАиП/LR12/Task1-3/build
+CMAKE_BINARY_DIR = /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build
 
 # Utility rule file for Task1-3_autogen.
 
@@ -71,9 +71,9 @@ CMakeFiles/Task1-3_autogen: Task1-3_autogen/timestamp
 Task1-3_autogen/timestamp: /usr/lib/qt6/libexec/moc
 Task1-3_autogen/timestamp: /usr/lib/qt6/libexec/uic
 Task1-3_autogen/timestamp: CMakeFiles/Task1-3_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/stani/Документы/553501/ОАиП/LR12/Task1-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Task1-3"
-	/usr/bin/cmake -E cmake_autogen /home/stani/Документы/553501/ОАиП/LR12/Task1-3/build/CMakeFiles/Task1-3_autogen.dir/AutogenInfo.json Debug
-	/usr/bin/cmake -E touch /home/stani/Документы/553501/ОАиП/LR12/Task1-3/build/Task1-3_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Task1-3"
+	/usr/bin/cmake -E cmake_autogen /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build/CMakeFiles/Task1-3_autogen.dir/AutogenInfo.json Debug
+	/usr/bin/cmake -E touch /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build/Task1-3_autogen/timestamp
 
 Task1-3_autogen: CMakeFiles/Task1-3_autogen
 Task1-3_autogen: Task1-3_autogen/timestamp
@@ -89,6 +89,6 @@ CMakeFiles/Task1-3_autogen.dir/clean:
 .PHONY : CMakeFiles/Task1-3_autogen.dir/clean
 
 CMakeFiles/Task1-3_autogen.dir/depend:
-	cd /home/stani/Документы/553501/ОАиП/LR12/Task1-3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stani/Документы/553501/ОАиП/LR12/Task1-3 /home/stani/Документы/553501/ОАиП/LR12/Task1-3 /home/stani/Документы/553501/ОАиП/LR12/Task1-3/build /home/stani/Документы/553501/ОАиП/LR12/Task1-3/build /home/stani/Документы/553501/ОАиП/LR12/Task1-3/build/CMakeFiles/Task1-3_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3 /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3 /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build/CMakeFiles/Task1-3_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Task1-3_autogen.dir/depend
 

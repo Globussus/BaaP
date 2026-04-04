@@ -32,7 +32,7 @@
 					[
 						0
 					],
-					"name" : "VectorQtProject",
+					"name" : "Task4-5",
 					"targetIndexes" : 
 					[
 						0,
@@ -49,7 +49,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "MyVector::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MyVector-Debug-8bdee3f85b8ce67b021f.json",
+					"jsonFile" : "target-MyVector-Debug-0f71499d3a6750936cf3.json",
 					"name" : "MyVector",
 					"projectIndex" : 0
 				},
@@ -70,7 +70,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Task4-5::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Task4-5-Debug-28bbb135622ae78b6014.json",
+					"jsonFile" : "target-Task4-5-Debug-643269619aee5c0586f6.json",
 					"name" : "Task4-5",
 					"projectIndex" : 0
 				},
@@ -94,8 +94,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/stani/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/553501/\u041e\u0410\u0438\u041f/LR12/Task4-5/build",
-		"source" : "/home/stani/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/553501/\u041e\u0410\u0438\u041f/LR12/Task4-5"
+		"build" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR12/Task4-5/build",
+		"source" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR12/Task4-5"
 	},
 	"version" : 
 	{

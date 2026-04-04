@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stani/Документы/553501/ОАиП/LR12/Task4-5
+CMAKE_SOURCE_DIR = /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build
+CMAKE_BINARY_DIR = /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build
 
 # Utility rule file for MyVector_autogen.
 
@@ -71,9 +71,9 @@ CMakeFiles/MyVector_autogen: MyVector_autogen/timestamp
 MyVector_autogen/timestamp: /usr/lib/qt6/libexec/moc
 MyVector_autogen/timestamp: /usr/lib/qt6/libexec/uic
 MyVector_autogen/timestamp: CMakeFiles/MyVector_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target MyVector"
-	/usr/bin/cmake -E cmake_autogen /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles/MyVector_autogen.dir/AutogenInfo.json Debug
-	/usr/bin/cmake -E touch /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/MyVector_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target MyVector"
+	/usr/bin/cmake -E cmake_autogen /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles/MyVector_autogen.dir/AutogenInfo.json Debug
+	/usr/bin/cmake -E touch /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/MyVector_autogen/timestamp
 
 MyVector_autogen: CMakeFiles/MyVector_autogen
 MyVector_autogen: MyVector_autogen/timestamp
@@ -89,6 +89,6 @@ CMakeFiles/MyVector_autogen.dir/clean:
 .PHONY : CMakeFiles/MyVector_autogen.dir/clean
 
 CMakeFiles/MyVector_autogen.dir/depend:
-	cd /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stani/Документы/553501/ОАиП/LR12/Task4-5 /home/stani/Документы/553501/ОАиП/LR12/Task4-5 /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles/MyVector_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5 /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5 /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles/MyVector_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/MyVector_autogen.dir/depend
 

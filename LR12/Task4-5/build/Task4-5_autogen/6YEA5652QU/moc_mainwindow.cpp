@@ -27,58 +27,49 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_MainWindow_t {
-    uint offsetsAndSizes[30];
+    uint offsetsAndSizes[24];
     char stringdata0[11];
-    char stringdata1[11];
+    char stringdata1[20];
     char stringdata2[1];
-    char stringdata3[10];
-    char stringdata4[8];
-    char stringdata5[9];
-    char stringdata6[9];
-    char stringdata7[8];
-    char stringdata8[5];
-    char stringdata9[12];
-    char stringdata10[9];
-    char stringdata11[11];
-    char stringdata12[15];
-    char stringdata13[16];
-    char stringdata14[13];
+    char stringdata3[19];
+    char stringdata4[18];
+    char stringdata5[17];
+    char stringdata6[18];
+    char stringdata7[17];
+    char stringdata8[18];
+    char stringdata9[16];
+    char stringdata10[14];
+    char stringdata11[21];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_MainWindow_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
         QT_MOC_LITERAL(0, 10),  // "MainWindow"
-        QT_MOC_LITERAL(11, 10),  // "onPushBack"
-        QT_MOC_LITERAL(22, 0),  // ""
-        QT_MOC_LITERAL(23, 9),  // "onPopBack"
-        QT_MOC_LITERAL(33, 7),  // "onClear"
-        QT_MOC_LITERAL(41, 8),  // "onResize"
-        QT_MOC_LITERAL(50, 8),  // "onInsert"
-        QT_MOC_LITERAL(59, 7),  // "onErase"
-        QT_MOC_LITERAL(67, 4),  // "onAt"
-        QT_MOC_LITERAL(72, 11),  // "onFrontBack"
-        QT_MOC_LITERAL(84, 8),  // "onAssign"
-        QT_MOC_LITERAL(93, 10),  // "onPairMake"
-        QT_MOC_LITERAL(104, 14),  // "onPairSetFirst"
-        QT_MOC_LITERAL(119, 15),  // "onPairSetSecond"
-        QT_MOC_LITERAL(135, 12)   // "onShowNested"
+        QT_MOC_LITERAL(11, 19),  // "demonstratePushBack"
+        QT_MOC_LITERAL(31, 0),  // ""
+        QT_MOC_LITERAL(32, 18),  // "demonstratePopBack"
+        QT_MOC_LITERAL(51, 17),  // "demonstrateInsert"
+        QT_MOC_LITERAL(69, 16),  // "demonstrateErase"
+        QT_MOC_LITERAL(86, 17),  // "demonstrateResize"
+        QT_MOC_LITERAL(104, 16),  // "demonstrateClear"
+        QT_MOC_LITERAL(121, 17),  // "demonstrateAssign"
+        QT_MOC_LITERAL(139, 15),  // "demonstrateSwap"
+        QT_MOC_LITERAL(155, 13),  // "demonstrateAt"
+        QT_MOC_LITERAL(169, 20)   // "demonstrateFrontBack"
     },
     "MainWindow",
-    "onPushBack",
+    "demonstratePushBack",
     "",
-    "onPopBack",
-    "onClear",
-    "onResize",
-    "onInsert",
-    "onErase",
-    "onAt",
-    "onFrontBack",
-    "onAssign",
-    "onPairMake",
-    "onPairSetFirst",
-    "onPairSetSecond",
-    "onShowNested"
+    "demonstratePopBack",
+    "demonstrateInsert",
+    "demonstrateErase",
+    "demonstrateResize",
+    "demonstrateClear",
+    "demonstrateAssign",
+    "demonstrateSwap",
+    "demonstrateAt",
+    "demonstrateFrontBack"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -89,7 +80,7 @@ Q_CONSTINIT static const uint qt_meta_data_MainWindow[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-      13,   14, // methods
+      10,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -97,24 +88,18 @@ Q_CONSTINIT static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   92,    2, 0x08,    1 /* Private */,
-       3,    0,   93,    2, 0x08,    2 /* Private */,
-       4,    0,   94,    2, 0x08,    3 /* Private */,
-       5,    0,   95,    2, 0x08,    4 /* Private */,
-       6,    0,   96,    2, 0x08,    5 /* Private */,
-       7,    0,   97,    2, 0x08,    6 /* Private */,
-       8,    0,   98,    2, 0x08,    7 /* Private */,
-       9,    0,   99,    2, 0x08,    8 /* Private */,
-      10,    0,  100,    2, 0x08,    9 /* Private */,
-      11,    0,  101,    2, 0x08,   10 /* Private */,
-      12,    0,  102,    2, 0x08,   11 /* Private */,
-      13,    0,  103,    2, 0x08,   12 /* Private */,
-      14,    0,  104,    2, 0x08,   13 /* Private */,
+       1,    0,   74,    2, 0x08,    1 /* Private */,
+       3,    0,   75,    2, 0x08,    2 /* Private */,
+       4,    0,   76,    2, 0x08,    3 /* Private */,
+       5,    0,   77,    2, 0x08,    4 /* Private */,
+       6,    0,   78,    2, 0x08,    5 /* Private */,
+       7,    0,   79,    2, 0x08,    6 /* Private */,
+       8,    0,   80,    2, 0x08,    7 /* Private */,
+       9,    0,   81,    2, 0x08,    8 /* Private */,
+      10,    0,   82,    2, 0x08,    9 /* Private */,
+      11,    0,   83,    2, 0x08,   10 /* Private */,
 
  // slots: parameters
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -138,31 +123,25 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_MainWindow_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<MainWindow, std::true_type>,
-        // method 'onPushBack'
+        // method 'demonstratePushBack'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onPopBack'
+        // method 'demonstratePopBack'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onClear'
+        // method 'demonstrateInsert'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onResize'
+        // method 'demonstrateErase'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onInsert'
+        // method 'demonstrateResize'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onErase'
+        // method 'demonstrateClear'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onAt'
+        // method 'demonstrateAssign'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onFrontBack'
+        // method 'demonstrateSwap'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onAssign'
+        // method 'demonstrateAt'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onPairMake'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onPairSetFirst'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onPairSetSecond'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onShowNested'
+        // method 'demonstrateFrontBack'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -174,19 +153,16 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<MainWindow *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->onPushBack(); break;
-        case 1: _t->onPopBack(); break;
-        case 2: _t->onClear(); break;
-        case 3: _t->onResize(); break;
-        case 4: _t->onInsert(); break;
-        case 5: _t->onErase(); break;
-        case 6: _t->onAt(); break;
-        case 7: _t->onFrontBack(); break;
-        case 8: _t->onAssign(); break;
-        case 9: _t->onPairMake(); break;
-        case 10: _t->onPairSetFirst(); break;
-        case 11: _t->onPairSetSecond(); break;
-        case 12: _t->onShowNested(); break;
+        case 0: _t->demonstratePushBack(); break;
+        case 1: _t->demonstratePopBack(); break;
+        case 2: _t->demonstrateInsert(); break;
+        case 3: _t->demonstrateErase(); break;
+        case 4: _t->demonstrateResize(); break;
+        case 5: _t->demonstrateClear(); break;
+        case 6: _t->demonstrateAssign(); break;
+        case 7: _t->demonstrateSwap(); break;
+        case 8: _t->demonstrateAt(); break;
+        case 9: _t->demonstrateFrontBack(); break;
         default: ;
         }
     }
@@ -212,13 +188,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 13)
+        if (_id < 10)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 13;
+        _id -= 10;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 13)
+        if (_id < 10)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 13;
+        _id -= 10;
     }
     return _id;
 }

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stani/Документы/553501/ОАиП/LR12/Task4-5
+CMAKE_SOURCE_DIR = /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build
+CMAKE_BINARY_DIR = /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Task4-5.dir/depend.make
@@ -72,51 +72,51 @@ include CMakeFiles/Task4-5.dir/flags.make
 Task4-5_autogen/timestamp: /usr/lib/qt6/libexec/moc
 Task4-5_autogen/timestamp: /usr/lib/qt6/libexec/uic
 Task4-5_autogen/timestamp: CMakeFiles/Task4-5.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Task4-5"
-	/usr/bin/cmake -E cmake_autogen /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles/Task4-5_autogen.dir/AutogenInfo.json Debug
-	/usr/bin/cmake -E touch /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/Task4-5_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Task4-5"
+	/usr/bin/cmake -E cmake_autogen /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles/Task4-5_autogen.dir/AutogenInfo.json Debug
+	/usr/bin/cmake -E touch /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/Task4-5_autogen/timestamp
 
 CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.o: CMakeFiles/Task4-5.dir/flags.make
 CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.o: Task4-5_autogen/mocs_compilation.cpp
 CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.o: CMakeFiles/Task4-5.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.o -MF CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.o -c /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/Task4-5_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.o -MF CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/Task4-5_autogen/mocs_compilation.cpp
 
 CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/Task4-5_autogen/mocs_compilation.cpp > CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/Task4-5_autogen/mocs_compilation.cpp > CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/Task4-5_autogen/mocs_compilation.cpp -o CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/Task4-5_autogen/mocs_compilation.cpp -o CMakeFiles/Task4-5.dir/Task4-5_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/Task4-5.dir/src/main.cpp.o: CMakeFiles/Task4-5.dir/flags.make
-CMakeFiles/Task4-5.dir/src/main.cpp.o: /home/stani/Документы/553501/ОАиП/LR12/Task4-5/src/main.cpp
+CMakeFiles/Task4-5.dir/src/main.cpp.o: /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/src/main.cpp
 CMakeFiles/Task4-5.dir/src/main.cpp.o: CMakeFiles/Task4-5.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Task4-5.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Task4-5.dir/src/main.cpp.o -MF CMakeFiles/Task4-5.dir/src/main.cpp.o.d -o CMakeFiles/Task4-5.dir/src/main.cpp.o -c /home/stani/Документы/553501/ОАиП/LR12/Task4-5/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Task4-5.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Task4-5.dir/src/main.cpp.o -MF CMakeFiles/Task4-5.dir/src/main.cpp.o.d -o CMakeFiles/Task4-5.dir/src/main.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/src/main.cpp
 
 CMakeFiles/Task4-5.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Task4-5.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stani/Документы/553501/ОАиП/LR12/Task4-5/src/main.cpp > CMakeFiles/Task4-5.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/src/main.cpp > CMakeFiles/Task4-5.dir/src/main.cpp.i
 
 CMakeFiles/Task4-5.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Task4-5.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stani/Документы/553501/ОАиП/LR12/Task4-5/src/main.cpp -o CMakeFiles/Task4-5.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/src/main.cpp -o CMakeFiles/Task4-5.dir/src/main.cpp.s
 
 CMakeFiles/Task4-5.dir/src/mainwindow.cpp.o: CMakeFiles/Task4-5.dir/flags.make
-CMakeFiles/Task4-5.dir/src/mainwindow.cpp.o: /home/stani/Документы/553501/ОАиП/LR12/Task4-5/src/mainwindow.cpp
+CMakeFiles/Task4-5.dir/src/mainwindow.cpp.o: /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/src/mainwindow.cpp
 CMakeFiles/Task4-5.dir/src/mainwindow.cpp.o: CMakeFiles/Task4-5.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Task4-5.dir/src/mainwindow.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Task4-5.dir/src/mainwindow.cpp.o -MF CMakeFiles/Task4-5.dir/src/mainwindow.cpp.o.d -o CMakeFiles/Task4-5.dir/src/mainwindow.cpp.o -c /home/stani/Документы/553501/ОАиП/LR12/Task4-5/src/mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Task4-5.dir/src/mainwindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Task4-5.dir/src/mainwindow.cpp.o -MF CMakeFiles/Task4-5.dir/src/mainwindow.cpp.o.d -o CMakeFiles/Task4-5.dir/src/mainwindow.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/src/mainwindow.cpp
 
 CMakeFiles/Task4-5.dir/src/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Task4-5.dir/src/mainwindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stani/Документы/553501/ОАиП/LR12/Task4-5/src/mainwindow.cpp > CMakeFiles/Task4-5.dir/src/mainwindow.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/src/mainwindow.cpp > CMakeFiles/Task4-5.dir/src/mainwindow.cpp.i
 
 CMakeFiles/Task4-5.dir/src/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Task4-5.dir/src/mainwindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stani/Документы/553501/ОАиП/LR12/Task4-5/src/mainwindow.cpp -o CMakeFiles/Task4-5.dir/src/mainwindow.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/src/mainwindow.cpp -o CMakeFiles/Task4-5.dir/src/mainwindow.cpp.s
 
 # Object files for target Task4-5
 Task4__5_OBJECTS = \
@@ -138,7 +138,7 @@ Task4-5: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 Task4-5: /usr/lib/x86_64-linux-gnu/libGLX.so
 Task4-5: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 Task4-5: CMakeFiles/Task4-5.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Task4-5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Task4-5"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Task4-5.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -150,6 +150,6 @@ CMakeFiles/Task4-5.dir/clean:
 .PHONY : CMakeFiles/Task4-5.dir/clean
 
 CMakeFiles/Task4-5.dir/depend: Task4-5_autogen/timestamp
-	cd /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stani/Документы/553501/ОАиП/LR12/Task4-5 /home/stani/Документы/553501/ОАиП/LR12/Task4-5 /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/CMakeFiles/Task4-5.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5 /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5 /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/CMakeFiles/Task4-5.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Task4-5.dir/depend
 

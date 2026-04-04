@@ -4,9 +4,9 @@
 #include <QMainWindow>
 #include <QTableWidget>
 #include <QPushButton>
-#include <QInputDialog>
-#include <QMessageBox>
+#include <QComboBox>
 #include <QLabel>
+#include <QTextEdit>
 #include "vector.h"
 #include "pair.h"
 
@@ -14,34 +14,36 @@ class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget* parent = nullptr);
+    MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private slots:
-    void onPushBack();
-    void onPopBack();
-    void onClear();
-    void onResize();
-    void onInsert();
-    void onErase();
-    void onAt();
-    void onFrontBack();
-    void onAssign();
-
-    void onPairMake();
-    void onPairSetFirst();
-    void onPairSetSecond();
-    void onShowNested();
+    void demonstratePushBack();
+    void demonstratePopBack();
+    void demonstrateInsert();
+    void demonstrateErase();
+    void demonstrateResize();
+    void demonstrateClear();
+    void demonstrateAssign();
+    void demonstrateSwap();
+    void demonstrateAt();
+    void demonstrateFrontBack();
 
 private:
     void setupUI();
-    void refreshGrids();
-
-    Vector<Pair<Vector<int>, Vector<Pair<int, double>>>> mainData;
+    void connectSignals();
+    void updateTables();
     
-    QWidget* centralWidget;
-    QTableWidget *tableInts;
-    QTableWidget *tablePairs;
+    Pair<Vector<int>, Vector<Pair<int, double>>> data_;
+
+    QTableWidget *table1_;
+    QTableWidget *table2_;
+    QLabel *nestedLabel_;
+    QComboBox *vectorSelector;
+    
+    QPushButton *btnPushBack, *btnPopBack, *btnInsert, *btnErase, 
+                *btnResize, *btnClear, *btnAssign, *btnSwap, 
+                *btnAt, *btnFrontBack, *btnReserve, *btnNested;
 };
 
 #endif

@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/stani/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/553501/\u041e\u0410\u0438\u041f/LR12/Task1-3/build"
+			"value" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR12/Task1-3/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/stani/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/553501/\u041e\u0410\u0438\u041f/LR12/Task1-3/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR12/Task1-3/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -615,7 +615,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/stani/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/553501/\u041e\u0410\u0438\u041f/LR12/Task1-3"
+			"value" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR12/Task1-3"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1474,18 +1474,6 @@
 			"value" : "[/usr/include][v()]"
 		},
 		{
-			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_XKB",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Details about finding XKB"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "[/usr/lib/x86_64-linux-gnu/libxkbcommon.so][/usr/include][v1.6.0(0.5.0)]"
-		},
-		{
 			"name" : "HAVE_STDATOMIC",
 			"properties" : 
 			[
@@ -1639,7 +1627,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libGLU.so"
+			"value" : "OPENGL_glu_LIBRARY-NOTFOUND"
 		},
 		{
 			"name" : "OPENGL_glx_LIBRARY",
@@ -1731,7 +1719,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-I/usr/include"
+			"value" : ""
 		},
 		{
 			"name" : "PKG_XKB_CFLAGS_I",
@@ -1767,46 +1755,10 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : ""
 		},
 		{
 			"name" : "PKG_XKB_INCLUDEDIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "/usr/include"
-		},
-		{
-			"name" : "PKG_XKB_INCLUDE_DIRS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "/usr/include"
-		},
-		{
-			"name" : "PKG_XKB_LDFLAGS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "-L/usr/lib/x86_64-linux-gnu;-lxkbcommon"
-		},
-		{
-			"name" : "PKG_XKB_LDFLAGS_OTHER",
 			"properties" : 
 			[
 				{
@@ -1827,31 +1779,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/lib/x86_64-linux-gnu"
-		},
-		{
-			"name" : "PKG_XKB_LIBRARIES",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "xkbcommon"
-		},
-		{
-			"name" : "PKG_XKB_LIBRARY_DIRS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "/usr/lib/x86_64-linux-gnu"
+			"value" : ""
 		},
 		{
 			"name" : "PKG_XKB_LIBS",
@@ -1911,7 +1839,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "xkbcommon"
+			"value" : ""
 		},
 		{
 			"name" : "PKG_XKB_PREFIX",
@@ -1923,7 +1851,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr"
+			"value" : ""
 		},
 		{
 			"name" : "PKG_XKB_STATIC_CFLAGS",
@@ -1935,7 +1863,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-I/usr/include"
+			"value" : ""
 		},
 		{
 			"name" : "PKG_XKB_STATIC_CFLAGS_I",
@@ -1962,42 +1890,6 @@
 			"value" : ""
 		},
 		{
-			"name" : "PKG_XKB_STATIC_INCLUDE_DIRS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "/usr/include"
-		},
-		{
-			"name" : "PKG_XKB_STATIC_LDFLAGS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "-L/usr/lib/x86_64-linux-gnu;-lxkbcommon"
-		},
-		{
-			"name" : "PKG_XKB_STATIC_LDFLAGS_OTHER",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
 			"name" : "PKG_XKB_STATIC_LIBDIR",
 			"properties" : 
 			[
@@ -2008,30 +1900,6 @@
 			],
 			"type" : "INTERNAL",
 			"value" : ""
-		},
-		{
-			"name" : "PKG_XKB_STATIC_LIBRARIES",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "xkbcommon"
-		},
-		{
-			"name" : "PKG_XKB_STATIC_LIBRARY_DIRS",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "/usr/lib/x86_64-linux-gnu"
 		},
 		{
 			"name" : "PKG_XKB_STATIC_LIBS",
@@ -2091,7 +1959,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1.6.0"
+			"value" : ""
 		},
 		{
 			"name" : "PKG_XKB_xkbcommon_INCLUDEDIR",
@@ -6543,7 +6411,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/stani/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/553501/\u041e\u0410\u0438\u041f/LR12/Task1-3/build"
+			"value" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR12/Task1-3/build"
 		},
 		{
 			"name" : "Task1-3_IS_TOP_LEVEL",
@@ -6567,7 +6435,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/stani/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/553501/\u041e\u0410\u0438\u041f/LR12/Task1-3"
+			"value" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR12/Task1-3"
 		},
 		{
 			"name" : "Vulkan_GLSLANG_VALIDATOR_EXECUTABLE",
@@ -6643,7 +6511,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "XKB_INCLUDE_DIR-NOTFOUND"
 		},
 		{
 			"name" : "XKB_LIBRARY",
@@ -6655,7 +6523,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libxkbcommon.so"
+			"value" : "XKB_LIBRARY-NOTFOUND"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
@@ -6682,18 +6550,6 @@
 			"value" : "/usr/local"
 		},
 		{
-			"name" : "__pkg_config_arguments_PKG_XKB",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "QUIET;xkbcommon"
-		},
-		{
 			"name" : "__pkg_config_checked_PKG_XKB",
 			"properties" : 
 			[
@@ -6704,34 +6560,6 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "1"
-		},
-		{
-			"name" : "pkgcfg_lib_PKG_XKB_xkbcommon",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libxkbcommon.so"
-		},
-		{
-			"name" : "prefix_result",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "/usr/lib/x86_64-linux-gnu"
 		}
 	],
 	"kind" : "cache",

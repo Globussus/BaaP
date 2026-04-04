@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/MyVector_autogen/include -I/home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs
+CXX_INCLUDES = -I/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/MyVector_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/include/libs
 
 CXX_FLAGS = -g -std=gnu++17
 

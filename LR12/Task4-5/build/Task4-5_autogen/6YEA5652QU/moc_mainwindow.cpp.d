@@ -1,9 +1,9 @@
-/home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/Task4-5_autogen/6YEA5652QU/moc_mainwindow.cpp: /home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/mainwindow.h \
-  /home/stani/Документы/553501/ОАиП/LR12/Task4-5/build/Task4-5_autogen/moc_predefs.h \
-  /home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs/iterator.h \
-  /home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs/pair.h \
-  /home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs/reverse_iterator.h \
-  /home/stani/Документы/553501/ОАиП/LR12/Task4-5/include/libs/vector.h \
+/home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/Task4-5_autogen/6YEA5652QU/moc_mainwindow.cpp: /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/include/mainwindow.h \
+  /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/build/Task4-5_autogen/moc_predefs.h \
+  /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/include/libs/iterator.h \
+  /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/include/libs/pair.h \
+  /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/include/libs/reverse_iterator.h \
+  /home/globus/Документы/ОАиП/BaaP/LR12/Task4-5/include/libs/vector.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -408,25 +408,22 @@
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QInputDialog \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableWidget \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTextEdit \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qinputdialog.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
@@ -437,6 +434,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtableview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtablewidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtextedit.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \

@@ -1,7 +1,7 @@
 CMakeFiles/Task1-3.dir/Task1-3_autogen/mocs_compilation.cpp.o: \
- /home/stani/Документы/553501/ОАиП/LR12/Task1-3/build/Task1-3_autogen/mocs_compilation.cpp \
+ /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build/Task1-3_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/stani/Документы/553501/ОАиП/LR12/Task1-3/build/Task1-3_autogen/6YEA5652QU/moc_mainwindow.cpp \
+ /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build/Task1-3_autogen/6YEA5652QU/moc_mainwindow.cpp \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -116,7 +116,7 @@ CMakeFiles/Task1-3.dir/Task1-3_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/stani/Документы/553501/ОАиП/LR12/Task1-3/build/Task1-3_autogen/6YEA5652QU/../../../include/mainwindow.h \
+ /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build/Task1-3_autogen/6YEA5652QU/../../../include/mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \

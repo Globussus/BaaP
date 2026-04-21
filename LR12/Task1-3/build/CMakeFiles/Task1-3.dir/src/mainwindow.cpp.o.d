@@ -1,7 +1,7 @@
 CMakeFiles/Task1-3.dir/src/mainwindow.cpp.o: \
- /home/stani/Документы/553501/ОАиП/LR12/Task1-3/src/mainwindow.cpp \
+ /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/src/mainwindow.cpp \
  /usr/include/stdc-predef.h \
- /home/stani/Документы/553501/ОАиП/LR12/Task1-3/include/mainwindow.h \
+ /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/include/mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -358,7 +358,7 @@ CMakeFiles/Task1-3.dir/src/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
- /home/stani/Документы/553501/ОАиП/LR12/Task1-3/include/tools.h \
+ /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/include/tools.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/bits/basic_ios.h \
  /usr/include/c++/13/bits/locale_facets.h /usr/include/c++/13/cwctype \

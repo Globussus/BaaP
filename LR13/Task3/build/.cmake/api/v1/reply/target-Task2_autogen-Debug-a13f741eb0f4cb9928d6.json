@@ -1,0 +1,71 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR13/Task2/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "Task2_autogen_timestamp_deps::@6c64fabbc7af1857a48f"
+		}
+	],
+	"id" : "Task2_autogen::@6c64fabbc7af1857a48f",
+	"isGeneratorProvided" : true,
+	"name" : "Task2_autogen",
+	"paths" : 
+	{
+		"build" : "Task2/build",
+		"source" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR13/Task2"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Task2/build/CMakeFiles/Task2_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Task2/build/CMakeFiles/Task2_autogen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Task2/build/Task2_autogen/timestamp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

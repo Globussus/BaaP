@@ -1,0 +1,8 @@
+/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build/CMakeFiles/StringLib.dir
+/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build/CMakeFiles/Task2.dir
+/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build/CMakeFiles/edit_cache.dir
+/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build/CMakeFiles/rebuild_cache.dir
+/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build/CMakeFiles/StringLib_autogen_timestamp_deps.dir
+/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build/CMakeFiles/StringLib_autogen.dir
+/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build/CMakeFiles/Task2_autogen_timestamp_deps.dir
+/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build/CMakeFiles/Task2_autogen.dir

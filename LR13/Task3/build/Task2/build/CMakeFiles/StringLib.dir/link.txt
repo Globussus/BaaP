@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libStringLib.so -o libStringLib.so CMakeFiles/StringLib.dir/StringLib_autogen/mocs_compilation.cpp.o CMakeFiles/StringLib.dir/src/myString.cpp.o CMakeFiles/StringLib.dir/src/iterator.cpp.o CMakeFiles/StringLib.dir/src/reverseIterator.cpp.o 

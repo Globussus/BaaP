@@ -1,5 +1,5 @@
-/home/stani/Документы/553501/ОАиП/LR12/Task1-3/build/Task1-3_autogen/6YEA5652QU/moc_mainwindow.cpp: /home/stani/Документы/553501/ОАиП/LR12/Task1-3/include/mainwindow.h \
-  /home/stani/Документы/553501/ОАиП/LR12/Task1-3/build/Task1-3_autogen/moc_predefs.h \
+/home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build/Task1-3_autogen/6YEA5652QU/moc_mainwindow.cpp: /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/include/mainwindow.h \
+  /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/build/Task1-3_autogen/moc_predefs.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

@@ -1,7 +1,7 @@
 CMakeFiles/Task1-3.dir/src/tools.cpp.o: \
- /home/stani/Документы/553501/ОАиП/LR12/Task1-3/src/tools.cpp \
+ /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/src/tools.cpp \
  /usr/include/stdc-predef.h \
- /home/stani/Документы/553501/ОАиП/LR12/Task1-3/include/tools.h \
+ /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/include/tools.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

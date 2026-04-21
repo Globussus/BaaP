@@ -28,6 +28,9 @@ private slots:
     void demonstrateSwap();
     void demonstrateAt();
     void demonstrateFrontBack();
+    void demonstrateIterators();
+    void demonstrateSize();
+    void demonstrateEmplace();
 
 private:
     void setupUI();
@@ -43,7 +46,8 @@ private:
     
     QPushButton *btnPushBack, *btnPopBack, *btnInsert, *btnErase, 
                 *btnResize, *btnClear, *btnAssign, *btnSwap, 
-                *btnAt, *btnFrontBack, *btnReserve, *btnNested;
+                *btnAt, *btnFrontBack, *btnReserve, *btnNested,
+                *btnIterators, *btnSize, *btnEmplace;
 };
 
 #endif

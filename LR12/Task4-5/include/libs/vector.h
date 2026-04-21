@@ -79,12 +79,34 @@ public:
         return array;
     }
 
-    iterator emplace(iterator it, const T& value) {
-        return insert(it, const_cast<T&>(value));
+    template<typename... Args>
+    iterator emplace(iterator it, Args&&... args) {
+        if (_size == 0) {
+            if (_capacity == 0) reserve(1);
+            new (array) T(std::forward<Args>(args)...);
+            _size++;
+            return iterator(array + 1);
+        }
+        size_t index = it.distance(begin());
+        if (_size >= _capacity) {
+            reserve(_capacity == 0 ? 1 : _capacity * 2);
+        }
+        _size++;
+        for (size_t i = _size - 1; i > index; i--) {
+            new (array + i) T(array[i - 1]);
+            (array + i - 1)->~T();
+        }
+        new (array + index) T(std::forward<Args>(args)...);
+        return iterator(array + index + 1);
     }
 
-    void emplace_back(const T& value) {
-        push_back(value);
+    template<typename... Args>
+    void emplace_back(Args&&... args) {
+        if (_size >= _capacity) {
+            reserve(_capacity == 0 ? 1 : _capacity * 2);
+        }
+        new (array + _size) T(std::forward<Args>(args)...);
+        _size++;
     }
 
     bool empty() const { return _size == 0; }
@@ -114,6 +136,10 @@ public:
     T& front() { return array[0]; }
 
     iterator insert(iterator it, const T& value) {
+        if (_size == 0) {
+            push_back(value);
+            return iterator(array + 1);
+        }
         size_t index = it.distance(begin());
         if (_size >= _capacity) {
             reserve(_capacity == 0 ? 1 : _capacity * 2);
@@ -124,7 +150,7 @@ public:
             (array + i - 1)->~T();
         }
         new (array + index) T(value);
-        return iterator(array + index);
+        return iterator(array + index + 1);
     }
 
     long long max_size() const { return INT64_MAX / sizeof(T); }

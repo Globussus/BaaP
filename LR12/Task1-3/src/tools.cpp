@@ -191,16 +191,16 @@ int interpolationSearch(std::vector<int> &array, int length, int element) {
     return -1;
 }
 
-int binaryPow(int digit, int powder, int mod) {
+int binaryPow(int digit, int power, int mod) {
     long long result = 1; 
     long long d = digit % mod;
 
-    while (powder > 0) {
-        if (powder & 1) {
+    while (power > 0) {
+        if (power & 1) {
             result = (result * d) % mod;
         }
         d = (d * d) % mod; 
-        powder >>= 1;     
+        power >>= 1;     
     }
     return (int)result;
 }

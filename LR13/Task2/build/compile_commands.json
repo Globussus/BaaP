@@ -1,0 +1,44 @@
+[
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build",
+  "command": "/usr/bin/c++ -DStringLib_EXPORTS -I/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build/StringLib_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR13/Task2/include -g -std=c++17 -fPIC -o CMakeFiles/StringLib.dir/StringLib_autogen/mocs_compilation.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR13/Task2/build/StringLib_autogen/mocs_compilation.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build/StringLib_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/StringLib.dir/StringLib_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build",
+  "command": "/usr/bin/c++ -DStringLib_EXPORTS -I/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build/StringLib_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR13/Task2/include -g -std=c++17 -fPIC -o CMakeFiles/StringLib.dir/src/myString.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR13/Task2/src/myString.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR13/Task2/src/myString.cpp",
+  "output": "CMakeFiles/StringLib.dir/src/myString.cpp.o"
+},
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build",
+  "command": "/usr/bin/c++ -DStringLib_EXPORTS -I/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build/StringLib_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR13/Task2/include -g -std=c++17 -fPIC -o CMakeFiles/StringLib.dir/src/iterator.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR13/Task2/src/iterator.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR13/Task2/src/iterator.cpp",
+  "output": "CMakeFiles/StringLib.dir/src/iterator.cpp.o"
+},
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build",
+  "command": "/usr/bin/c++ -DStringLib_EXPORTS -I/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build/StringLib_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR13/Task2/include -g -std=c++17 -fPIC -o CMakeFiles/StringLib.dir/src/reverseIterator.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR13/Task2/src/reverseIterator.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR13/Task2/src/reverseIterator.cpp",
+  "output": "CMakeFiles/StringLib.dir/src/reverseIterator.cpp.o"
+},
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build/Task2_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR13/Task2/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=c++17 -fPIC -o CMakeFiles/Task2.dir/Task2_autogen/mocs_compilation.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR13/Task2/build/Task2_autogen/mocs_compilation.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build/Task2_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/Task2.dir/Task2_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build/Task2_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR13/Task2/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=c++17 -fPIC -o CMakeFiles/Task2.dir/src/main.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR13/Task2/src/main.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR13/Task2/src/main.cpp",
+  "output": "CMakeFiles/Task2.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/globus/Документы/ОАиП/BaaP/LR13/Task2/build/Task2_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR13/Task2/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=c++17 -fPIC -o CMakeFiles/Task2.dir/src/mainwindow.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR13/Task2/src/mainwindow.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR13/Task2/src/mainwindow.cpp",
+  "output": "CMakeFiles/Task2.dir/src/mainwindow.cpp.o"
+}
+]

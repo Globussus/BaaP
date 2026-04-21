@@ -46,6 +46,7 @@ void MainWindow::setupUI() {
     btnPushBack = new QPushButton("Push Back");
     btnPopBack = new QPushButton("Pop Back");
     btnInsert = new QPushButton("Insert");
+    btnEmplace = new QPushButton("Emplace");
     btnErase = new QPushButton("Erase");
     btnResize = new QPushButton("Resize");
     btnClear = new QPushButton("Clear");
@@ -53,12 +54,14 @@ void MainWindow::setupUI() {
     btnSwap = new QPushButton("Swap");
     btnAt = new QPushButton("At");
     btnFrontBack = new QPushButton("Front/Back");
-    btnReserve = new QPushButton("Reserve");
+    btnIterators = new QPushButton("Iterators");
+    btnSize = new QPushButton("Size");
 
     grid->addWidget(btnPushBack, 0, 0); grid->addWidget(btnPopBack, 0, 1); grid->addWidget(btnInsert, 0, 2);
-    grid->addWidget(btnErase, 1, 0);   grid->addWidget(btnResize, 1, 1); grid->addWidget(btnClear, 1, 2);
-    grid->addWidget(btnAssign, 2, 0);  grid->addWidget(btnSwap, 2, 1);   grid->addWidget(btnAt, 2, 2);
-    grid->addWidget(btnFrontBack, 3, 0); grid->addWidget(btnReserve, 3, 1);
+    grid->addWidget(btnEmplace, 1, 0); grid->addWidget(btnErase, 1, 1); grid->addWidget(btnResize, 1, 2);
+    grid->addWidget(btnClear, 2, 0);  grid->addWidget(btnAssign, 2, 1); grid->addWidget(btnSwap, 2, 2);
+    grid->addWidget(btnAt, 3, 0); grid->addWidget(btnFrontBack, 3, 1); grid->addWidget(btnIterators, 3, 2);
+    grid->addWidget(btnSize, 4, 0);
     
     mainLayout->addWidget(btnGroup);
 }
@@ -67,6 +70,7 @@ void MainWindow::connectSignals() {
     connect(btnPushBack, &QPushButton::clicked, this, &MainWindow::demonstratePushBack);
     connect(btnPopBack, &QPushButton::clicked, this, &MainWindow::demonstratePopBack);
     connect(btnInsert, &QPushButton::clicked, this, &MainWindow::demonstrateInsert);
+    connect(btnEmplace, &QPushButton::clicked, this, &MainWindow::demonstrateEmplace);
     connect(btnErase, &QPushButton::clicked, this, &MainWindow::demonstrateErase);
     connect(btnResize, &QPushButton::clicked, this, &MainWindow::demonstrateResize);
     connect(btnClear, &QPushButton::clicked, this, &MainWindow::demonstrateClear);
@@ -74,6 +78,8 @@ void MainWindow::connectSignals() {
     connect(btnSwap, &QPushButton::clicked, this, &MainWindow::demonstrateSwap);
     connect(btnAt, &QPushButton::clicked, this, &MainWindow::demonstrateAt);
     connect(btnFrontBack, &QPushButton::clicked, this, &MainWindow::demonstrateFrontBack);
+    connect(btnIterators, &QPushButton::clicked, this, &MainWindow::demonstrateIterators);
+    connect(btnSize, &QPushButton::clicked, this, &MainWindow::demonstrateSize);
 }
 
 void MainWindow::updateTables() {
@@ -122,7 +128,33 @@ void MainWindow::demonstrateInsert() {
     updateTables();
 }
 
-#include <stdexcept>
+void MainWindow::demonstrateEmplace() {
+    int target = vectorSelector->currentIndex();
+    size_t currentSize = (target == 0) ? data_.first.size() : data_.second.size();
+    
+    bool ok;
+    int idx = QInputDialog::getInt(this, "Emplace", "Введите индекс для вставки:", 0, 0, currentSize, 1, &ok);
+    if (!ok) return;
+
+    if (target == 0) {
+        int val = QInputDialog::getInt(this, "Emplace (Vector 1)", "Введите число (int):", 0, -1000, 1000, 1, &ok);
+        if (ok) {
+            auto it = data_.first.begin();
+            for(int i = 0; i < idx; ++i) ++it;
+            data_.first.emplace(it, val);
+        }
+    } else {
+        int v1 = QInputDialog::getInt(this, "Emplace (Vector 2)", "Введите целое (int):", 0, -1000, 1000, 1, &ok);
+        if (!ok) return;
+        double v2 = QInputDialog::getDouble(this, "Emplace (Vector 2)", "Введите дробное (double):", 0.0, -1000, 1000, 2, &ok);
+        if (ok) {
+            auto it = data_.second.begin();
+            for(int i = 0; i < idx; ++i) ++it;
+            data_.second.emplace(it, Pair<int, double>(v1, v2));
+        }
+    }
+    updateTables();
+}
 
 void MainWindow::demonstrateSwap() {
     int target = vectorSelector->currentIndex();
@@ -133,64 +165,86 @@ void MainWindow::demonstrateSwap() {
     
     if (!ok) return;
 
-    try {
-        if (target == 0) {
+    if (target == 0) {
+        QString valStr = QInputDialog::getText(this, "Ввод элементов", 
+            QString("Введите %1 целых чисел через пробел:").arg(count), QLineEdit::Normal, "", &ok);
+        if (!ok) return;
+
+        QStringList vals = valStr.split(" ");
+        vals.removeAll("");
+        
+        if (vals.size() != count) {
+            QMessageBox::critical(this, "Ошибка", 
+                QString("Ожидалось %1 элементов, введено %2!").arg(count).arg(vals.size()));
+            return;
+        }
+
+        try {
             Vector<int> temp;
             for (int i = 0; i < count; ++i) {
-                QString valStr = QInputDialog::getText(this, "Ввод элементов", 
-                    QString("Элемент [%1] (int):").arg(i), QLineEdit::Normal, "", &ok);
-                
-                if (!ok) return;
-
                 bool canConvert;
-                int val = valStr.toInt(&canConvert);
+                int val = vals[i].toInt(&canConvert);
                 
                 if (!canConvert) {
-                    throw std::invalid_argument("Значение '" + valStr.toStdString() + "' не является целым числом!");
+                    throw std::invalid_argument("Значение '" + vals[i].toStdString() + "' не является целым числом!");
                 }
                 temp.push_back(val);
             }
             data_.first.swap(temp);
             QMessageBox::information(this, "Успех", "Обмен для Матрицы 1 выполнен.");
-            
-        } else {
+            updateTables();
+        } catch (const std::invalid_argument& e) {
+            QMessageBox::critical(this, "Ошибка типа данных", QString("Ошибка: %1").arg(e.what()));
+        }
+        
+    } else {
+        QString intStr = QInputDialog::getText(this, "Ввод целых чисел", 
+            QString("Введите %1 целых чисел через пробел:").arg(count), QLineEdit::Normal, "", &ok);
+        if (!ok) return;
+
+        QString doubleStr = QInputDialog::getText(this, "Ввод дробных чисел", 
+            QString("Введите %1 дробных чисел через пробел:").arg(count), QLineEdit::Normal, "", &ok);
+        if (!ok) return;
+
+        QStringList ints = intStr.split(" ");
+        ints.removeAll("");
+        QStringList doubles = doubleStr.split(" ");
+        doubles.removeAll("");
+        
+        if (ints.size() != count) {
+            QMessageBox::critical(this, "Ошибка", 
+                QString("Ожидалось %1 целых чисел, введено %2!").arg(count).arg(ints.size()));
+            return;
+        }
+        
+        if (doubles.size() != count) {
+            QMessageBox::critical(this, "Ошибка", 
+                QString("Ожидалось %1 дробных чисел, введено %2!").arg(count).arg(doubles.size()));
+            return;
+        }
+
+        try {
             Vector<Pair<int, double>> temp;
             for (int i = 0; i < count; ++i) {
-                QString intStr = QInputDialog::getText(this, "Ввод Pair", 
-                    QString("Пара [%1] - Введите INT:").arg(i), QLineEdit::Normal, "", &ok);
-                if (!ok) return;
-
-                bool canConvertInt;
-                int v1 = intStr.toInt(&canConvertInt);
+                bool canConvertInt, canConvertDouble;
+                int v1 = ints[i].toInt(&canConvertInt);
+                double v2 = doubles[i].toDouble(&canConvertDouble);
+                
                 if (!canConvertInt) {
-                    throw std::invalid_argument("Значение '" + intStr.toStdString() + "' не является целым числом (int)!");
+                    throw std::invalid_argument("Значение '" + ints[i].toStdString() + "' не является целым числом!");
                 }
-
-                QString doubleStr = QInputDialog::getText(this, "Ввод Pair", 
-                    QString("Пара [%1] - Введите DOUBLE:").arg(i), QLineEdit::Normal, "", &ok);
-                if (!ok) return;
-
-                bool canConvertDouble;
-                double v2 = doubleStr.toDouble(&canConvertDouble);
                 if (!canConvertDouble) {
-                    throw std::invalid_argument("Значение '" + doubleStr.toStdString() + "' не является числом (double)!");
+                    throw std::invalid_argument("Значение '" + doubles[i].toStdString() + "' не является числом!");
                 }
-
+                
                 temp.push_back(Pair<int, double>(v1, v2));
             }
             data_.second.swap(temp);
             QMessageBox::information(this, "Успех", "Обмен для Матрицы 2 выполнен.");
+            updateTables();
+        } catch (const std::invalid_argument& e) {
+            QMessageBox::critical(this, "Ошибка типа данных", QString("Ошибка: %1").arg(e.what()));
         }
-        
-        updateTables();
-
-    } catch (const std::invalid_argument& e) {
-        QMessageBox::critical(this, "Ошибка типа данных", 
-            QString("Ошибка: %1").arg(e.what()));
-    } catch (const std::exception& e) {
-        QMessageBox::critical(this, "Ошибка", e.what());
-    } catch (...) {
-        QMessageBox::critical(this, "Ошибка", "Произошла непредвиденная ошибка.");
     }
 }
 
@@ -244,13 +298,17 @@ void MainWindow::demonstrateResize() {
 }
 
 void MainWindow::demonstrateAssign() {
-    bool ok;
-    int n = QInputDialog::getInt(this, "Assign", "Кол-во:", 5, 1, 50, 1, &ok);
-    if (ok) {
-        if (vectorSelector->currentIndex() == 0) data_.first.assign(n, 1);
-        else data_.second.assign(n, Pair<int, double>(1, 1.0));
-        updateTables();
+    bool ok1, ok2, ok3;
+    int n = QInputDialog::getInt(this, "Assign", "Кол-во:", 5, 1, 50, 1, &ok1);
+    if (vectorSelector->currentIndex() == 0) {
+        int m = QInputDialog::getInt(this, "Assign", "Целое число:", 5, 1, 50, 1, &ok2);
+        if (ok1 && ok2) data_.first.assign(n, m);
+    } else {
+        int m = QInputDialog::getInt(this, "Assign", "Целое число:", 5, 1, 50, 1, &ok2);
+        int d = QInputDialog::getInt(this, "Assign", "Дробное число:", 5, 1, 50, 1, &ok2);
+        if (ok1 && ok2 && ok3) data_.second.assign(n, Pair<int, double>(m, d));
     }
+    updateTables();
 }
 
 void MainWindow::demonstrateAt() {
@@ -266,14 +324,63 @@ void MainWindow::demonstrateAt() {
 }
 
 void MainWindow::demonstrateFrontBack() {
-    if (vectorSelector->currentIndex() == 0 && !data_.first.empty())
-        QMessageBox::information(this, "Front/Back", QString("F: %1, B: %2").arg(data_.first.front()).arg(data_.first.back()));
-    else if (!data_.second.empty())
-        QMessageBox::information(this, "Front/Back", "Элементы в таблице 2");
+    int target = vectorSelector->currentIndex();
+    if (target == 0) {
+        if (data_.first.empty()) {
+            QMessageBox::warning(this, "Front/Back", "Вектор пуст!");
+            return;
+        }
+        QMessageBox::information(this, "Front/Back", QString("Front: %1, Back: %2").arg(data_.first.front()).arg(data_.first.back()));
+    } else {
+        if (data_.second.empty()) {
+            QMessageBox::warning(this, "Front/Back", "Вектор пуст!");
+            return;
+        }
+        QString msg = QString("Front: (%1, %2), Back: (%3, %4)")
+            .arg(data_.second.front().first).arg(data_.second.front().second)
+            .arg(data_.second.back().first).arg(data_.second.back().second);
+        QMessageBox::information(this, "Front/Back", msg);
+    }
 }
 
 void MainWindow::demonstrateClear() {
     if (vectorSelector->currentIndex() == 0) data_.first.clear();
     else data_.second.clear();
     updateTables();
+}
+
+void MainWindow::demonstrateIterators() {
+    int target = vectorSelector->currentIndex();
+    if (target == 0) {
+        if (data_.first.empty()) {
+            QMessageBox::warning(this, "Iterators", "Вектор пуст!");
+            return;
+        }
+        QString msg = QString("begin: %1, end: %2, rbegin: %3, rend: %4")
+            .arg(*data_.first.begin())
+            .arg(data_.first[data_.first.size() - 1])
+            .arg(*data_.first.rbegin())
+            .arg(data_.first[0]);
+        QMessageBox::information(this, "Iterators", msg);
+    } else {
+        if (data_.second.empty()) {
+            QMessageBox::warning(this, "Iterators", "Вектор пуст!");
+            return;
+        }
+        QString msg = QString("begin: (%1, %2), end: (%3, %4), rbegin: (%5, %6), rend: (%7, %8)")
+            .arg((*data_.second.begin()).first).arg((*data_.second.begin()).second)
+            .arg(data_.second[data_.second.size() - 1].first).arg(data_.second[data_.second.size() - 1].second)
+            .arg((*data_.second.rbegin()).first).arg((*data_.second.rbegin()).second)
+            .arg(data_.second[0].first).arg(data_.second[0].second);
+        QMessageBox::information(this, "Iterators", msg);
+    }
+}
+
+void MainWindow::demonstrateSize() {
+    int target = vectorSelector->currentIndex();
+    if (target == 0) {
+        QMessageBox::information(this, "Size", QString("Size: %1").arg(data_.first.size()));
+    } else {
+        QMessageBox::information(this, "Size", QString("Size: %1").arg(data_.second.size()));
+    }
 }

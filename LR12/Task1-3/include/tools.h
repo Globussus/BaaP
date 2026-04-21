@@ -22,7 +22,7 @@ int binarySearch(std::vector<int> &array, int element, int length);
 std::string printArray(std::vector<int> &array, int length);
 void interpolationSort(std::vector<int> &array, int length, std::string &message);
 int interpolationSearch(std::vector<int> &array, int length, int element);
-int binaryPow(int digit, int powder, int mod);
+int binaryPow(int digit, int power, int mod);
 
 std::vector<int> findMedians(std::vector<int> &array, int length);
 

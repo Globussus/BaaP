@@ -68,7 +68,7 @@ void MainWindow::handleFirstTask() {
             numbers.append(number);
         }
         if (numbers.size() != n) {
-            throw std::runtime_error("Недостаточное количество чисел!");
+            throw std::runtime_error("Количество чисел не равно n!");
         }
         std::string message;
         std::vector<int> numbersVector(numbers.begin(), numbers.end());
@@ -99,7 +99,7 @@ void MainWindow::handleFirstTask() {
         message.append("Исходный массив после сортировки слиянием: " + printArray(numbersCopy, n) + "\n");
         message.append("Время исполнения сортировки слиянием: " + std::to_string(heap_duration) + " мкс\n");
 
-        int search = QInputDialog::getInt(this, "Ввод", "Введите целое число n", 0, 0, n - 1, 1, &okInt);
+        int search = QInputDialog::getInt(this, "Ввод", "Введите целое число n", 0, 0, numbersCopy.back(), 1, &okInt);
         if (!okInt) {
             throw std::runtime_error("Некорректно введенное число!");
         }
@@ -137,14 +137,14 @@ void MainWindow::handleSecondTask() {
             numbers.append(number);
         }
         if (numbers.size() != n) {
-            throw std::runtime_error("Недостаточное количество чисел!");
+            throw std::runtime_error("Количество чисел не равно n!");
         }
         std::string message;
         std::vector<int> numbersVector(numbers.begin(), numbers.end());
         interpolationSort(numbersVector, n, message);
         message.append(printArray(numbersVector, n));
 
-        int search = QInputDialog::getInt(this, "Ввод", "Введите целое число n", 0, 0, n - 1, 1, &okInt);
+        int search = QInputDialog::getInt(this, "Ввод", "Введите целое число n", 0, 0, numbersVector.back(), 1, &okInt);
         if (!okInt) {
             throw std::runtime_error("Некорректно введенное число!");
         }
@@ -183,7 +183,7 @@ void MainWindow::handleThirdTask() {
             numbers.append(number);
         }
         if (numbers.size() != n) {
-            throw std::runtime_error("Недостаточное количество чисел!");
+            throw std::runtime_error("Количество чисел не равно n!");
         }
         std::string message;
         std::vector<int> numbersVector(numbers.begin(), numbers.end());

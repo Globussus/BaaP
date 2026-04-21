@@ -1,7 +1,7 @@
 CMakeFiles/Task1-3.dir/src/main.cpp.o: \
- /home/stani/Документы/553501/ОАиП/LR12/Task1-3/src/main.cpp \
+ /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/src/main.cpp \
  /usr/include/stdc-predef.h \
- /home/stani/Документы/553501/ОАиП/LR12/Task1-3/include/mainwindow.h \
+ /home/globus/Документы/ОАиП/BaaP/LR12/Task1-3/include/mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \

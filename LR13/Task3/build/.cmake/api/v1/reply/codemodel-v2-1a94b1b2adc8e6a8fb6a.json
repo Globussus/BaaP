@@ -1,0 +1,165 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						6,
+						7,
+						8
+					]
+				},
+				{
+					"build" : "Task2/build",
+					"jsonFile" : "directory-Task2.build-Debug-599923743694cad2e7cd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR13/Task2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Task3",
+					"targetIndexes" : 
+					[
+						6,
+						7,
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Task2",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "StringLib::@6c64fabbc7af1857a48f",
+					"jsonFile" : "target-StringLib-Debug-0688b56226f4c44ae841.json",
+					"name" : "StringLib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "StringLib_autogen::@6c64fabbc7af1857a48f",
+					"jsonFile" : "target-StringLib_autogen-Debug-afd7f4dd50adc57c3a0a.json",
+					"name" : "StringLib_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "StringLib_autogen_timestamp_deps::@6c64fabbc7af1857a48f",
+					"jsonFile" : "target-StringLib_autogen_timestamp_deps-Debug-e40ec2dbe20e1599917b.json",
+					"name" : "StringLib_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Task2::@6c64fabbc7af1857a48f",
+					"jsonFile" : "target-Task2-Debug-829ee9489a73ebf8aebd.json",
+					"name" : "Task2",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Task2_autogen::@6c64fabbc7af1857a48f",
+					"jsonFile" : "target-Task2_autogen-Debug-a13f741eb0f4cb9928d6.json",
+					"name" : "Task2_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Task2_autogen_timestamp_deps::@6c64fabbc7af1857a48f",
+					"jsonFile" : "target-Task2_autogen_timestamp_deps-Debug-4a99f3c53c79767ef4e1.json",
+					"name" : "Task2_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Task3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task3-Debug-36796fab9dbc99ba6b27.json",
+					"name" : "Task3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Task3_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task3_autogen-Debug-703e60adff0df036a90a.json",
+					"name" : "Task3_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Task3_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task3_autogen_timestamp_deps-Debug-78646cae7bd65467e5da.json",
+					"name" : "Task3_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR13/Task3/build",
+		"source" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR13/Task3"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

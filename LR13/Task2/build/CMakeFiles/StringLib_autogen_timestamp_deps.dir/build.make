@@ -66,8 +66,8 @@ include CMakeFiles/StringLib_autogen_timestamp_deps.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/StringLib_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/StringLib_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
 CMakeFiles/StringLib_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
+CMakeFiles/StringLib_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
 
 StringLib_autogen_timestamp_deps: CMakeFiles/StringLib_autogen_timestamp_deps
 StringLib_autogen_timestamp_deps: CMakeFiles/StringLib_autogen_timestamp_deps.dir/build.make

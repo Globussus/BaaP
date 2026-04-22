@@ -419,7 +419,6 @@ char* String::stringTokenize_r(char* str, const char* delimiters, char** saveptr
         return nullptr;
     }
 
-    // Пропускаем начальные разделители
     while (*nextToken) {
         bool isDelimiter = false;
         for (const char* d = delimiters; *d; ++d) {
@@ -452,8 +451,7 @@ char* String::stringTokenize_r(char* str, const char* delimiters, char** saveptr
         }
         nextToken++;
     }
-    
-    // Сохраняем позицию для следующего вызова
+
     if (*nextToken) {
         *saveptr = nextToken;
     } else {

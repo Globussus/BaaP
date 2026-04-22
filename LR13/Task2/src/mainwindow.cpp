@@ -71,14 +71,12 @@ static int safeStringLength(const char* s, int maxLen) {
     return len;
 }
 
-// Проверка: нужен ли числовой параметр для данной функции
 static bool needsNumberParam(const QString& funcName) {
     return funcName == "memcpy" || funcName == "memmove" || funcName == "strncpy" ||
            funcName == "strncat" || funcName == "memcmp" || funcName == "strncmp" ||
            funcName == "strxfrm" || funcName == "memset" || funcName == "strerror";
 }
 
-// Проверка: является ли строка корректным целым числом
 static bool isValidNumber(const QString& str, int& outValue) {
     if (str.isEmpty()) {
         return false;
@@ -97,7 +95,6 @@ void MainWindow::executeFunction() {
     QByteArray arr1 = input1->text().toUtf8();
     QByteArray arr2 = input2->text().toUtf8();
 
-    // Проверка числового параметра для функций, где он требуется
     int n = 0;
     if (needsNumberParam(funcName)) {
         QString numStr = inputNumber->text().trimmed();
@@ -108,11 +105,10 @@ void MainWindow::executeFunction() {
             return;
         }
     } else {
-        // Для функций без числового параметра просто парсим, если пользователь что-то ввёл
-        // (игнорируем, если пусто)
+
         QString numStr = inputNumber->text().trimmed();
         if (!numStr.isEmpty()) {
-            isValidNumber(numStr, n); // n будет использовано или проигнорировано
+            isValidNumber(numStr, n); 
         }
     }
 
@@ -199,19 +195,16 @@ void MainWindow::executeFunction() {
         logMessage(QString("Результат strxfrm: длина = %1, буфер = '%2'").arg(len).arg(buffer));
     } 
     else if (funcName == "strtok") {
-    // Проверяем, что строка 1 не пуста
     if (arr1.isEmpty()) {
         logMessage("ОШИБКА: Строка 1 (buffer) не может быть пустой для strtok.");
         return;
     }
     
-    // Проверяем, что разделители указаны
     if (arr2.isEmpty()) {
         logMessage("ОШИБКА: Строка 2 (delimiters) не может быть пустой.");
         return;
     }
     
-    // Создаём копию буфера для токенизации (так как strtok модифицирует строку)
     char* tokenBuffer = new char[BUFFER_SIZE];
     safeCopyToBuffer(tokenBuffer, BUFFER_SIZE, s1);
     
@@ -224,7 +217,6 @@ void MainWindow::executeFunction() {
     }
     
     while (token != nullptr) {
-        // Проверяем, что токен не пустой (двойные разделители)
         if (token[0] != '\0') {
             logMessage(QString("Токен %1: '%2'").arg(count++).arg(token));
         } else {

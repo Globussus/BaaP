@@ -17,8 +17,8 @@ add_executable(Task3
     src/main.cpp
     src/mainwindow.cpp
     src/bitset.cpp
-    include/mainwindow.h        # <-- ДОБАВЬТЕ ЗАГОЛОВОК!
-    include/bitset.h            # <-- И ЭТОТ ТОЖЕ
+    include/mainwindow.h      
+    include/bitset.h         
 )
 
 target_include_directories(Task3 PRIVATE 

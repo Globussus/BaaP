@@ -1,100 +1,83 @@
 #ifndef BITSET_H
 #define BITSET_H
 
+#include <cstddef>
+#include <memory>
 #include "./../../Task2/include/myString.h"
 
 class BitSet {
 public:
-    using sizeType = std::size_t;
-    
-    // Прокси-класс для operator[]
+    using SizeType = std::size_t;
+
     class BitReference {
     public:
-        BitReference(unsigned short& block, sizeType bitMask);
-        
+        BitReference(unsigned short& block, SizeType bitMask);
         BitReference& operator=(bool value);
         BitReference& operator=(const BitReference& other);
-        
         operator bool() const;
         bool operator~() const;
-        
         BitReference& flip();
-        
+
     private:
         unsigned short* block_;
-        sizeType bitMask_;
+        unsigned short bitMask_;
     };
-    
-    // Конструкторы
-    explicit BitSet(sizeType size);
+
+    explicit BitSet(SizeType size);
     BitSet(const BitSet& other);
     BitSet(BitSet&& other) noexcept;
-    ~BitSet() = default;
-    
     BitSet& operator=(const BitSet& other);
     BitSet& operator=(BitSet&& other) noexcept;
-    
-    // Доступ к элементам
-    bool operator[](sizeType pos) const;
-    BitReference operator[](sizeType pos);
-    
-    // Модификация отдельного бита — O(1)
-    void set(sizeType pos);
-    void reset(sizeType pos);
-    void flip(sizeType pos);
-    bool test(sizeType pos) const;
-    
-    // Модификация всех битов — O(N/16)
+    ~BitSet() = default;
+
+    bool operator[](SizeType pos) const;
+    BitReference operator[](SizeType pos);
+
+    bool test(SizeType pos) const;
+    void set(SizeType pos);
+    void reset(SizeType pos);
+    void flip(SizeType pos);
     void set();
     void reset();
     void flip();
-    
-    // Проверки — O(N/16)
+
     bool all() const;
     bool any() const;
     bool none() const;
-    
-    // Информация — O(1)
-    sizeType count() const;
-    sizeType size() const;
-    
-    // Преобразования
+    SizeType size() const;
+    SizeType count() const;
     String toString() const;
     unsigned long toULong() const;
     unsigned long long toULongLong() const;
-    
-    // Логические операции — O(N/16)
+
     BitSet operator~() const;
     BitSet operator&(const BitSet& other) const;
     BitSet operator|(const BitSet& other) const;
     BitSet operator^(const BitSet& other) const;
-    
     BitSet& operator&=(const BitSet& other);
     BitSet& operator|=(const BitSet& other);
     BitSet& operator^=(const BitSet& other);
-    
-    // Сравнение
+
     bool operator==(const BitSet& other) const;
     bool operator!=(const BitSet& other) const;
-    
-    // Сдвиги — O(N/16)
-    BitSet operator<<(sizeType pos) const;
-    BitSet operator>>(sizeType pos) const;
-    BitSet& operator<<=(sizeType pos);
-    BitSet& operator>>=(sizeType pos);
+
+    BitSet operator<<(SizeType pos) const;
+    BitSet operator>>(SizeType pos) const;
+    BitSet& operator<<=(SizeType pos);
+    BitSet& operator>>=(SizeType pos);
 
 private:
-    static constexpr sizeType BITS_PER_BLOCK = 16;
-    static constexpr sizeType BLOCK_MASK = BITS_PER_BLOCK - 1;
-    static constexpr unsigned short ALL_ONES = static_cast<unsigned short>(-1);
-    
+    static constexpr int kBitsPerBlock = 16;
+    static constexpr int kBlockMask = kBitsPerBlock - 1;
+    static constexpr unsigned short kAllOnes = 0xFFFF;
+
+    SizeType size_;
+    SizeType numBlocks_;
     std::unique_ptr<unsigned short[]> data_;
-    sizeType size_;
-    sizeType numBlocks_;
-    
-    sizeType blockIndex(sizeType pos) const;
-    sizeType bitIndex(sizeType pos) const;
-    unsigned short bitMask(sizeType pos) const;
+
+    SizeType blockIndex(SizeType pos) const;
+    SizeType bitIndex(SizeType pos) const;
+    unsigned short bitMask(SizeType pos) const;
 };
 
 #endif 

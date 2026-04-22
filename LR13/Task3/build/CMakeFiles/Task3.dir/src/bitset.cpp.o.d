@@ -2,7 +2,6 @@ CMakeFiles/Task3.dir/src/bitset.cpp.o: \
  /home/globus/Документы/ОАиП/BaaP/LR13/Task3/src/bitset.cpp \
  /usr/include/stdc-predef.h \
  /home/globus/Документы/ОАиП/BaaP/LR13/Task3/include/bitset.h \
- /home/globus/Документы/ОАиП/BaaP/LR13/Task3/include/./../../Task2/include/myString.h \
  /usr/include/c++/13/cstddef \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -117,8 +116,10 @@ CMakeFiles/Task3.dir/src/bitset.cpp.o: \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
- /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/stdexcept \
- /usr/include/c++/13/string /usr/include/c++/13/bits/char_traits.h \
+ /usr/include/c++/13/pstl/execution_defs.h \
+ /home/globus/Документы/ОАиП/BaaP/LR13/Task3/include/./../../Task2/include/myString.h \
+ /usr/include/c++/13/stdexcept /usr/include/c++/13/string \
+ /usr/include/c++/13/bits/char_traits.h \
  /usr/include/c++/13/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
  /usr/include/c++/13/clocale /usr/include/locale.h \

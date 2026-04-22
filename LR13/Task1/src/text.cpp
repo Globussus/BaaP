@@ -10,7 +10,6 @@ Text::Text(QWidget *parent)
       layout(new QGridLayout()),
       keyboardLayout(English),
       offset(0) {
-    setFont(QFont("Noto Sans Mono"));
     setMaximumHeight(35 * kRowCount);
     setFocusPolicy(Qt::StrongFocus);
     grabKeyboard();

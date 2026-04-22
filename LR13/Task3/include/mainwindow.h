@@ -1,32 +1,35 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include "bitset.h"
 #include <QMainWindow>
-#include <QLineEdit>
-#include <QTextEdit>
-#include <QPushButton>
-#include <QSpinBox>
-#include <QCheckBox>
-#include <QLabel>
+#include <memory>
+#include "bitset.h"
+
+class BitSet;
+class QLineEdit;
+class QSpinBox;
+class QTextEdit;
+class String;
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget* parent = nullptr);
-    ~MainWindow() = default;
+    explicit MainWindow(QWidget* parent = nullptr);
+    ~MainWindow() override = default;
 
 private slots:
+    void onSetBitsetSizeClicked();
     void onAllClicked();
     void onAnyClicked();
     void onNoneClicked();
     void onCountClicked();
     void onSizeClicked();
     void onTestClicked();
-    void onResetClicked();
     void onSetClicked();
+    void onResetClicked();
     void onFlipClicked();
+    void onToggleBitClicked();
     void onToULongClicked();
     void onToULongLongClicked();
     void onOperatorNotClicked();
@@ -34,25 +37,22 @@ private slots:
     void onOperatorOrClicked();
     void onShiftLeftClicked();
     void onShiftRightClicked();
-    void onSetBitsetSizeClicked();
-    void onToggleBitClicked();
 
 private:
     void setupUi();
     void updateBitsetDisplay();
     void logResult(const String& msg);
     void logResult(const QString& msg);
+    bool parseBitsetFromString(BitSet& bs, const QString& str);
 
-    QLineEdit* bitsetInput_;
-    QLineEdit* secondBitsetInput_;
-    QTextEdit* resultOutput_;
-    QTextEdit* logOutput_;
-    QSpinBox* indexSpinBox_;
-    QSpinBox* sizeSpinBox_;
-    QCheckBox* useIndexCheckBox_;
-    
     std::unique_ptr<BitSet> bitset_;
     std::unique_ptr<BitSet> secondBitset_;
+    QLineEdit* bitsetInput_;
+    QLineEdit* secondBitsetInput_;
+    QSpinBox* sizeSpinBox_;
+    QSpinBox* indexSpinBox_;
+    QTextEdit* resultOutput_;
+    QTextEdit* logOutput_;
 };
 
-#endif
+#endif  

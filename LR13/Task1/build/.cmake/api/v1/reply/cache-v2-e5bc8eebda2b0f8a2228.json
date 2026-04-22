@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR13/Task2/build"
+			"value" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR13/Task1/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -386,10 +386,6 @@
 			"properties" : 
 			[
 				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
 					"name" : "HELPSTRING",
 					"value" : "No help, variable specified on the command line."
 				}
@@ -419,7 +415,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR13/Task2/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR13/Task1/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -491,7 +487,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR13/Task2"
+			"value" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR13/Task1"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -991,7 +987,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Task2"
+			"value" : "Task1"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",
@@ -1003,7 +999,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "1.0.0"
+			"value" : "1.0"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_MAJOR",
@@ -1039,7 +1035,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "0"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION_TWEAK",
@@ -6338,7 +6334,7 @@
 			"value" : "/usr/lib/x86_64-linux-gnu/cmake/Qt6"
 		},
 		{
-			"name" : "Task2_BINARY_DIR",
+			"name" : "Task1_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -6347,10 +6343,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR13/Task2/build"
+			"value" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR13/Task1/build"
 		},
 		{
-			"name" : "Task2_IS_TOP_LEVEL",
+			"name" : "Task1_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -6362,7 +6358,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "Task2_SOURCE_DIR",
+			"name" : "Task1_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -6371,7 +6367,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR13/Task2"
+			"value" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR13/Task1"
 		},
 		{
 			"name" : "Vulkan_GLSLANG_VALIDATOR_EXECUTABLE",

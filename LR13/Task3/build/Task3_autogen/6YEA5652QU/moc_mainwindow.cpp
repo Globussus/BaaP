@@ -8,7 +8,6 @@
 
 #include <memory>
 #include "../../../include/mainwindow.h"
-#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'mainwindow.h' doesn't include <QObject>."
@@ -29,71 +28,71 @@ namespace {
 struct qt_meta_stringdata_MainWindow_t {
     uint offsetsAndSizes[40];
     char stringdata0[11];
-    char stringdata1[13];
+    char stringdata1[23];
     char stringdata2[1];
     char stringdata3[13];
-    char stringdata4[14];
-    char stringdata5[15];
-    char stringdata6[14];
+    char stringdata4[13];
+    char stringdata5[14];
+    char stringdata6[15];
     char stringdata7[14];
-    char stringdata8[15];
+    char stringdata8[14];
     char stringdata9[13];
-    char stringdata10[14];
-    char stringdata11[17];
-    char stringdata12[21];
-    char stringdata13[21];
+    char stringdata10[15];
+    char stringdata11[14];
+    char stringdata12[19];
+    char stringdata13[17];
     char stringdata14[21];
-    char stringdata15[20];
-    char stringdata16[19];
+    char stringdata15[21];
+    char stringdata16[21];
     char stringdata17[20];
-    char stringdata18[23];
-    char stringdata19[19];
+    char stringdata18[19];
+    char stringdata19[20];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_MainWindow_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
         QT_MOC_LITERAL(0, 10),  // "MainWindow"
-        QT_MOC_LITERAL(11, 12),  // "onAllClicked"
-        QT_MOC_LITERAL(24, 0),  // ""
-        QT_MOC_LITERAL(25, 12),  // "onAnyClicked"
-        QT_MOC_LITERAL(38, 13),  // "onNoneClicked"
-        QT_MOC_LITERAL(52, 14),  // "onCountClicked"
-        QT_MOC_LITERAL(67, 13),  // "onSizeClicked"
-        QT_MOC_LITERAL(81, 13),  // "onTestClicked"
-        QT_MOC_LITERAL(95, 14),  // "onResetClicked"
-        QT_MOC_LITERAL(110, 12),  // "onSetClicked"
-        QT_MOC_LITERAL(123, 13),  // "onFlipClicked"
-        QT_MOC_LITERAL(137, 16),  // "onToULongClicked"
-        QT_MOC_LITERAL(154, 20),  // "onToULongLongClicked"
-        QT_MOC_LITERAL(175, 20),  // "onOperatorNotClicked"
-        QT_MOC_LITERAL(196, 20),  // "onOperatorAndClicked"
-        QT_MOC_LITERAL(217, 19),  // "onOperatorOrClicked"
-        QT_MOC_LITERAL(237, 18),  // "onShiftLeftClicked"
-        QT_MOC_LITERAL(256, 19),  // "onShiftRightClicked"
-        QT_MOC_LITERAL(276, 22),  // "onSetBitsetSizeClicked"
-        QT_MOC_LITERAL(299, 18)   // "onToggleBitClicked"
+        QT_MOC_LITERAL(11, 22),  // "onSetBitsetSizeClicked"
+        QT_MOC_LITERAL(34, 0),  // ""
+        QT_MOC_LITERAL(35, 12),  // "onAllClicked"
+        QT_MOC_LITERAL(48, 12),  // "onAnyClicked"
+        QT_MOC_LITERAL(61, 13),  // "onNoneClicked"
+        QT_MOC_LITERAL(75, 14),  // "onCountClicked"
+        QT_MOC_LITERAL(90, 13),  // "onSizeClicked"
+        QT_MOC_LITERAL(104, 13),  // "onTestClicked"
+        QT_MOC_LITERAL(118, 12),  // "onSetClicked"
+        QT_MOC_LITERAL(131, 14),  // "onResetClicked"
+        QT_MOC_LITERAL(146, 13),  // "onFlipClicked"
+        QT_MOC_LITERAL(160, 18),  // "onToggleBitClicked"
+        QT_MOC_LITERAL(179, 16),  // "onToULongClicked"
+        QT_MOC_LITERAL(196, 20),  // "onToULongLongClicked"
+        QT_MOC_LITERAL(217, 20),  // "onOperatorNotClicked"
+        QT_MOC_LITERAL(238, 20),  // "onOperatorAndClicked"
+        QT_MOC_LITERAL(259, 19),  // "onOperatorOrClicked"
+        QT_MOC_LITERAL(279, 18),  // "onShiftLeftClicked"
+        QT_MOC_LITERAL(298, 19)   // "onShiftRightClicked"
     },
     "MainWindow",
-    "onAllClicked",
+    "onSetBitsetSizeClicked",
     "",
+    "onAllClicked",
     "onAnyClicked",
     "onNoneClicked",
     "onCountClicked",
     "onSizeClicked",
     "onTestClicked",
-    "onResetClicked",
     "onSetClicked",
+    "onResetClicked",
     "onFlipClicked",
+    "onToggleBitClicked",
     "onToULongClicked",
     "onToULongLongClicked",
     "onOperatorNotClicked",
     "onOperatorAndClicked",
     "onOperatorOrClicked",
     "onShiftLeftClicked",
-    "onShiftRightClicked",
-    "onSetBitsetSizeClicked",
-    "onToggleBitClicked"
+    "onShiftRightClicked"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -163,6 +162,8 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_MainWindow_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<MainWindow, std::true_type>,
+        // method 'onSetBitsetSizeClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'onAllClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'onAnyClicked'
@@ -175,11 +176,13 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'onTestClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onResetClicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'onSetClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onResetClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'onFlipClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onToggleBitClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'onToULongClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
@@ -194,10 +197,6 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         // method 'onShiftLeftClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'onShiftRightClicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onSetBitsetSizeClicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onToggleBitClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -209,24 +208,24 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<MainWindow *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->onAllClicked(); break;
-        case 1: _t->onAnyClicked(); break;
-        case 2: _t->onNoneClicked(); break;
-        case 3: _t->onCountClicked(); break;
-        case 4: _t->onSizeClicked(); break;
-        case 5: _t->onTestClicked(); break;
-        case 6: _t->onResetClicked(); break;
+        case 0: _t->onSetBitsetSizeClicked(); break;
+        case 1: _t->onAllClicked(); break;
+        case 2: _t->onAnyClicked(); break;
+        case 3: _t->onNoneClicked(); break;
+        case 4: _t->onCountClicked(); break;
+        case 5: _t->onSizeClicked(); break;
+        case 6: _t->onTestClicked(); break;
         case 7: _t->onSetClicked(); break;
-        case 8: _t->onFlipClicked(); break;
-        case 9: _t->onToULongClicked(); break;
-        case 10: _t->onToULongLongClicked(); break;
-        case 11: _t->onOperatorNotClicked(); break;
-        case 12: _t->onOperatorAndClicked(); break;
-        case 13: _t->onOperatorOrClicked(); break;
-        case 14: _t->onShiftLeftClicked(); break;
-        case 15: _t->onShiftRightClicked(); break;
-        case 16: _t->onSetBitsetSizeClicked(); break;
-        case 17: _t->onToggleBitClicked(); break;
+        case 8: _t->onResetClicked(); break;
+        case 9: _t->onFlipClicked(); break;
+        case 10: _t->onToggleBitClicked(); break;
+        case 11: _t->onToULongClicked(); break;
+        case 12: _t->onToULongLongClicked(); break;
+        case 13: _t->onOperatorNotClicked(); break;
+        case 14: _t->onOperatorAndClicked(); break;
+        case 15: _t->onOperatorOrClicked(); break;
+        case 16: _t->onShiftLeftClicked(); break;
+        case 17: _t->onShiftRightClicked(); break;
         default: ;
         }
     }

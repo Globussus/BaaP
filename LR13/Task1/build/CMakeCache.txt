@@ -336,15 +336,6 @@ Task1_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Task1_SOURCE_DIR:STATIC=/home/globus/Документы/ОАиП/BaaP/LR13/Task1
 
-//Value Computed by CMake
-Task2_BINARY_DIR:STATIC=/home/globus/Документы/ОАиП/BaaP/LR13/Task1/build
-
-//Value Computed by CMake
-Task2_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-Task2_SOURCE_DIR:STATIC=/home/globus/Документы/ОАиП/BaaP/LR13/Task1
-
 //Path to a program.
 Vulkan_GLSLANG_VALIDATOR_EXECUTABLE:FILEPATH=Vulkan_GLSLANG_VALIDATOR_EXECUTABLE-NOTFOUND
 

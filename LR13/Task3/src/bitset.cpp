@@ -1,9 +1,6 @@
 #include "bitset.h"
-#include <memory>
 
-// ==================== BitReference ====================
-
-BitSet::BitReference::BitReference(unsigned short& block, sizeType bitMask)
+BitSet::BitReference::BitReference(unsigned short& block, SizeType bitMask)
     : block_(&block), bitMask_(static_cast<unsigned short>(bitMask)) {}
 
 BitSet::BitReference& BitSet::BitReference::operator=(bool value) {
@@ -32,11 +29,8 @@ BitSet::BitReference& BitSet::BitReference::flip() {
     return *this;
 }
 
-// ==================== BitSet ====================
-
-BitSet::BitSet(sizeType size) 
-    : size_(size), 
-      numBlocks_((size + BITS_PER_BLOCK - 1) / BITS_PER_BLOCK) {
+BitSet::BitSet(SizeType size)
+    : size_(size), numBlocks_((size + kBitsPerBlock - 1) / kBitsPerBlock) {
     if (size_ == 0) {
         numBlocks_ = 0;
     }
@@ -45,18 +39,15 @@ BitSet::BitSet(sizeType size)
 }
 
 BitSet::BitSet(const BitSet& other)
-    : size_(other.size_), 
-      numBlocks_(other.numBlocks_) {
+    : size_(other.size_), numBlocks_(other.numBlocks_) {
     data_ = std::make_unique<unsigned short[]>(numBlocks_ + 1);
-    for (sizeType i = 0; i < numBlocks_; ++i) {
+    for (SizeType i = 0; i < numBlocks_; ++i) {
         data_[i] = other.data_[i];
     }
 }
 
 BitSet::BitSet(BitSet&& other) noexcept
-    : data_(std::move(other.data_)), 
-      size_(other.size_), 
-      numBlocks_(other.numBlocks_) {
+    : data_(std::move(other.data_)), size_(other.size_), numBlocks_(other.numBlocks_) {
     other.size_ = 0;
     other.numBlocks_ = 0;
 }
@@ -68,7 +59,7 @@ BitSet& BitSet::operator=(const BitSet& other) {
             data_ = std::make_unique<unsigned short[]>(numBlocks_ + 1);
         }
         size_ = other.size_;
-        for (sizeType i = 0; i < numBlocks_; ++i) {
+        for (SizeType i = 0; i < numBlocks_; ++i) {
             data_[i] = other.data_[i];
         }
     }
@@ -86,100 +77,93 @@ BitSet& BitSet::operator=(BitSet&& other) noexcept {
     return *this;
 }
 
-BitSet::sizeType BitSet::blockIndex(sizeType pos) const {
-    return pos / BITS_PER_BLOCK;
+BitSet::SizeType BitSet::blockIndex(SizeType pos) const {
+    return pos / kBitsPerBlock;
 }
 
-BitSet::sizeType BitSet::bitIndex(sizeType pos) const {
-    return pos & BLOCK_MASK;
+BitSet::SizeType BitSet::bitIndex(SizeType pos) const {
+    return pos & kBlockMask;
 }
 
-unsigned short BitSet::bitMask(sizeType pos) const {
+unsigned short BitSet::bitMask(SizeType pos) const {
     return static_cast<unsigned short>(1u << bitIndex(pos));
 }
 
-// ==================== Доступ к элементам (O(1)) ====================
-
-bool BitSet::operator[](sizeType pos) const {
+bool BitSet::operator[](SizeType pos) const {
     return test(pos);
 }
 
-BitSet::BitReference BitSet::operator[](sizeType pos) {
+BitSet::BitReference BitSet::operator[](SizeType pos) {
     return BitReference(data_[blockIndex(pos)], bitMask(pos));
 }
 
-bool BitSet::test(sizeType pos) const {
+bool BitSet::test(SizeType pos) const {
     return (data_[blockIndex(pos)] & bitMask(pos)) != 0;
 }
 
-// ==================== Модификация отдельного бита (O(1)) ====================
-
-void BitSet::set(sizeType pos) {
+void BitSet::set(SizeType pos) {
     data_[blockIndex(pos)] |= bitMask(pos);
 }
 
-void BitSet::reset(sizeType pos) {
+void BitSet::reset(SizeType pos) {
     data_[blockIndex(pos)] &= ~bitMask(pos);
 }
 
-void BitSet::flip(sizeType pos) {
+void BitSet::flip(SizeType pos) {
     data_[blockIndex(pos)] ^= bitMask(pos);
 }
 
-// ==================== Модификация всех битов (O(N/16)) ====================
-
 void BitSet::set() {
-    for (sizeType i = 0; i < numBlocks_; ++i) {
-        data_[i] = ALL_ONES;
+    for (SizeType i = 0; i < numBlocks_; ++i) {
+        data_[i] = kAllOnes;
     }
-    sizeType extraBits = size_ & BLOCK_MASK;
+    SizeType extraBits = size_ & kBlockMask;
     if (extraBits != 0 && numBlocks_ > 0) {
         data_[numBlocks_ - 1] &= static_cast<unsigned short>((1u << extraBits) - 1);
     }
 }
 
 void BitSet::reset() {
-    for (sizeType i = 0; i < numBlocks_; ++i) {
+    for (SizeType i = 0; i < numBlocks_; ++i) {
         data_[i] = 0;
     }
 }
 
 void BitSet::flip() {
-    for (sizeType i = 0; i < numBlocks_; ++i) {
+    for (SizeType i = 0; i < numBlocks_; ++i) {
         data_[i] = ~data_[i];
     }
-    sizeType extraBits = size_ & BLOCK_MASK;
+    SizeType extraBits = size_ & kBlockMask;
     if (extraBits != 0 && numBlocks_ > 0) {
         data_[numBlocks_ - 1] &= static_cast<unsigned short>((1u << extraBits) - 1);
     }
 }
 
-// ==================== Проверки (O(N/16)) ====================
-
 bool BitSet::all() const {
-    if (size_ == 0) return true;
-    
-    sizeType fullBlocks = size_ / BITS_PER_BLOCK;
-    
-    for (sizeType i = 0; i < fullBlocks; ++i) {
-        if (data_[i] != ALL_ONES) {
+    if (size_ == 0) {
+        return true;
+    }
+
+    SizeType fullBlocks = size_ / kBitsPerBlock;
+    for (SizeType i = 0; i < fullBlocks; ++i) {
+        if (data_[i] != kAllOnes) {
             return false;
         }
     }
-    
-    sizeType extraBits = size_ & BLOCK_MASK;
+
+    SizeType extraBits = size_ & kBlockMask;
     if (extraBits != 0) {
         unsigned short mask = static_cast<unsigned short>((1u << extraBits) - 1);
         if ((data_[fullBlocks] & mask) != mask) {
             return false;
         }
     }
-    
+
     return true;
 }
 
 bool BitSet::any() const {
-    for (sizeType i = 0; i < numBlocks_; ++i) {
+    for (SizeType i = 0; i < numBlocks_; ++i) {
         if (data_[i] != 0) {
             return true;
         }
@@ -191,15 +175,13 @@ bool BitSet::none() const {
     return !any();
 }
 
-// ==================== Информация ====================
-
-BitSet::sizeType BitSet::size() const {
+BitSet::SizeType BitSet::size() const {
     return size_;
 }
 
-BitSet::sizeType BitSet::count() const {
-    sizeType result = 0;
-    for (sizeType i = 0; i < numBlocks_; ++i) {
+BitSet::SizeType BitSet::count() const {
+    SizeType result = 0;
+    for (SizeType i = 0; i < numBlocks_; ++i) {
         unsigned short value = data_[i];
         while (value) {
             result += (value & 1u);
@@ -209,12 +191,10 @@ BitSet::sizeType BitSet::count() const {
     return result;
 }
 
-// ==================== Преобразования ====================
-
 String BitSet::toString() const {
     String result;
     for (int i = static_cast<int>(size_) - 1; i >= 0; --i) {
-        result.pushBack(test(static_cast<sizeType>(i)) ? '1' : '0');
+        result.pushBack(test(static_cast<SizeType>(i)) ? '1' : '0');
     }
     return result;
 }
@@ -224,7 +204,7 @@ unsigned long BitSet::toULong() const {
         return 0;
     }
     unsigned long result = 0;
-    for (sizeType i = 0; i < size_; ++i) {
+    for (SizeType i = 0; i < size_; ++i) {
         if (test(i)) {
             result |= (1ul << i);
         }
@@ -237,15 +217,13 @@ unsigned long long BitSet::toULongLong() const {
         return 0;
     }
     unsigned long long result = 0;
-    for (sizeType i = 0; i < size_; ++i) {
+    for (SizeType i = 0; i < size_; ++i) {
         if (test(i)) {
             result |= (1ull << i);
         }
     }
     return result;
 }
-
-// ==================== Логические операции (O(N/16)) ====================
 
 BitSet BitSet::operator~() const {
     BitSet result(*this);
@@ -272,38 +250,40 @@ BitSet BitSet::operator^(const BitSet& other) const {
 }
 
 BitSet& BitSet::operator&=(const BitSet& other) {
-    sizeType minBlocks = (numBlocks_ < other.numBlocks_) ? numBlocks_ : other.numBlocks_;
-    for (sizeType i = 0; i < minBlocks; ++i) {
+    SizeType minBlocks = (numBlocks_ < other.numBlocks_) ? numBlocks_ : other.numBlocks_;
+    for (SizeType i = 0; i < minBlocks; ++i) {
         data_[i] &= other.data_[i];
     }
-    for (sizeType i = minBlocks; i < numBlocks_; ++i) {
+    for (SizeType i = minBlocks; i < numBlocks_; ++i) {
         data_[i] = 0;
     }
     return *this;
 }
 
 BitSet& BitSet::operator|=(const BitSet& other) {
-    sizeType minBlocks = (numBlocks_ < other.numBlocks_) ? numBlocks_ : other.numBlocks_;
-    for (sizeType i = 0; i < minBlocks; ++i) {
+    SizeType minBlocks = (numBlocks_ < other.numBlocks_) ? numBlocks_ : other.numBlocks_;
+    for (SizeType i = 0; i < minBlocks; ++i) {
         data_[i] |= other.data_[i];
     }
     return *this;
 }
 
 BitSet& BitSet::operator^=(const BitSet& other) {
-    sizeType minBlocks = (numBlocks_ < other.numBlocks_) ? numBlocks_ : other.numBlocks_;
-    for (sizeType i = 0; i < minBlocks; ++i) {
+    SizeType minBlocks = (numBlocks_ < other.numBlocks_) ? numBlocks_ : other.numBlocks_;
+    for (SizeType i = 0; i < minBlocks; ++i) {
         data_[i] ^= other.data_[i];
     }
     return *this;
 }
 
-// ==================== Сравнение ====================
-
 bool BitSet::operator==(const BitSet& other) const {
-    if (size_ != other.size_) return false;
-    for (sizeType i = 0; i < numBlocks_; ++i) {
-        if (data_[i] != other.data_[i]) return false;
+    if (size_ != other.size_) {
+        return false;
+    }
+    for (SizeType i = 0; i < numBlocks_; ++i) {
+        if (data_[i] != other.data_[i]) {
+            return false;
+        }
     }
     return true;
 }
@@ -312,81 +292,80 @@ bool BitSet::operator!=(const BitSet& other) const {
     return !(*this == other);
 }
 
-// ==================== Сдвиги (O(N/16)) ====================
-
-BitSet BitSet::operator<<(sizeType pos) const {
+BitSet BitSet::operator<<(SizeType pos) const {
     BitSet result(*this);
     result <<= pos;
     return result;
 }
 
-BitSet BitSet::operator>>(sizeType pos) const {
+BitSet BitSet::operator>>(SizeType pos) const {
     BitSet result(*this);
     result >>= pos;
     return result;
 }
 
-BitSet& BitSet::operator<<=(sizeType pos) {
+BitSet& BitSet::operator<<=(SizeType pos) {
     if (pos >= size_) {
         reset();
         return *this;
     }
-    
-    sizeType blockShift = pos / BITS_PER_BLOCK;
-    sizeType bitShift = pos & BLOCK_MASK;
-    
+
+    SizeType blockShift = pos / kBitsPerBlock;
+    SizeType bitShift = pos & kBlockMask;
+
     for (int i = static_cast<int>(numBlocks_) - 1; i >= 0; --i) {
-        sizeType srcIdx = static_cast<sizeType>(i) - blockShift;
+        SizeType srcIdx = static_cast<SizeType>(i) - blockShift;
         unsigned short newValue = 0;
-        
+
         if (srcIdx < numBlocks_) {
             newValue = data_[srcIdx] << bitShift;
             if (bitShift != 0 && srcIdx > 0) {
-                newValue |= data_[srcIdx - 1] >> (BITS_PER_BLOCK - bitShift);
+                newValue |= data_[srcIdx - 1] >> (kBitsPerBlock - bitShift);
             }
         }
-        
-        data_[static_cast<sizeType>(i)] = newValue;
+
+        data_[static_cast<SizeType>(i)] = newValue;
     }
-    
-    for (sizeType i = 0; i < blockShift && i < numBlocks_; ++i) {
-        data_[i] = 0;
-    }
-    
-    sizeType extraBits = size_ & BLOCK_MASK;
+
+    SizeType extraBits = size_ & kBlockMask;
     if (extraBits != 0 && numBlocks_ > 0) {
         data_[numBlocks_ - 1] &= static_cast<unsigned short>((1u << extraBits) - 1);
     }
-    
+
     return *this;
 }
 
-BitSet& BitSet::operator>>=(sizeType pos) {
+BitSet& BitSet::operator>>=(SizeType pos) {
     if (pos >= size_) {
         reset();
         return *this;
     }
-    
-    sizeType blockShift = pos / BITS_PER_BLOCK;
-    sizeType bitShift = pos & BLOCK_MASK;
-    
-    for (sizeType i = 0; i < numBlocks_; ++i) {
-        sizeType srcIdx = i + blockShift;
+
+    SizeType blockShift = pos / kBitsPerBlock;
+    SizeType bitShift = pos & kBlockMask;
+
+    for (SizeType i = 0; i < numBlocks_; ++i) {
+        SizeType srcIdx = i + blockShift;
         unsigned short newValue = 0;
-        
+
         if (srcIdx < numBlocks_) {
             newValue = data_[srcIdx] >> bitShift;
             if (bitShift != 0 && srcIdx + 1 < numBlocks_) {
-                newValue |= data_[srcIdx + 1] << (BITS_PER_BLOCK - bitShift);
+                newValue |= data_[srcIdx + 1] << (kBitsPerBlock - bitShift);
             }
         }
-        
+
         data_[i] = newValue;
     }
-    
-    for (sizeType i = numBlocks_ - blockShift; i < numBlocks_; ++i) {
+
+    for (SizeType i = numBlocks_ - blockShift; i < numBlocks_; ++i) {
         data_[i] = 0;
     }
-    
+
+    SizeType extraBits = size_ & kBlockMask;
+    if (extraBits != 0 && numBlocks_ > 0) {
+        data_[numBlocks_ - 1] &= static_cast<unsigned short>((1u << extraBits) - 1);
+    }
+
     return *this;
 }

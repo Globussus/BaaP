@@ -50,7 +50,7 @@ QString Text::generate() {
     for (int i = 2; i <= 6; i++) {
         for (int j = 0; j < (kColumnCount - i) / 2; j += i + 1) {
             QString word;
-            for (int k = 0; k < i; k++) {
+            for (int k = 0; k < i * i; k++) {
                 word += alphabets[keyboardLayout]
                                  [rand() % alphabets[keyboardLayout].size()];
             }

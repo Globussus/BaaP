@@ -1,0 +1,5 @@
+# Hashes of file build rules.
+dd7ba794be5ab737080741928ec0d423 CMakeFiles/ShipTask_autogen
+dd7ba794be5ab737080741928ec0d423 CMakeFiles/ShipTask_autogen_timestamp_deps
+e2ab06ecf4d31c837edb62ecfaa90a90 ShipTask_autogen/timestamp
+b624a1361a83b82288c09ba753a31053 Task1_autogen/timestamp

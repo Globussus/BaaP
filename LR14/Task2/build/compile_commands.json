@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR14/Task2/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/globus/Документы/ОАиП/BaaP/LR14/Task2/build/Task2_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR14/Task2/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Task2.dir/Task2_autogen/mocs_compilation.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR14/Task2/build/Task2_autogen/mocs_compilation.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR14/Task2/build/Task2_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/Task2.dir/Task2_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR14/Task2/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/globus/Документы/ОАиП/BaaP/LR14/Task2/build/Task2_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR14/Task2/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Task2.dir/src/main.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR14/Task2/src/main.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR14/Task2/src/main.cpp",
+  "output": "CMakeFiles/Task2.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR14/Task2/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/globus/Документы/ОАиП/BaaP/LR14/Task2/build/Task2_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR14/Task2/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Task2.dir/src/mainwindow.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR14/Task2/src/mainwindow.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR14/Task2/src/mainwindow.cpp",
+  "output": "CMakeFiles/Task2.dir/src/mainwindow.cpp.o"
+},
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR14/Task2/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/globus/Документы/ОАиП/BaaP/LR14/Task2/build/Task2_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR14/Task2/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -g -std=gnu++17 -fPIC -o CMakeFiles/Task2.dir/src/userinputdialog.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR14/Task2/src/userinputdialog.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR14/Task2/src/userinputdialog.cpp",
+  "output": "CMakeFiles/Task2.dir/src/userinputdialog.cpp.o"
+}
+]

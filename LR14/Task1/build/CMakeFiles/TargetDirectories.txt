@@ -1,0 +1,5 @@
+/home/globus/Документы/ОАиП/BaaP/LR14/Task1/build/CMakeFiles/ShipTask.dir
+/home/globus/Документы/ОАиП/BaaP/LR14/Task1/build/CMakeFiles/edit_cache.dir
+/home/globus/Документы/ОАиП/BaaP/LR14/Task1/build/CMakeFiles/rebuild_cache.dir
+/home/globus/Документы/ОАиП/BaaP/LR14/Task1/build/CMakeFiles/ShipTask_autogen_timestamp_deps.dir
+/home/globus/Документы/ОАиП/BaaP/LR14/Task1/build/CMakeFiles/ShipTask_autogen.dir

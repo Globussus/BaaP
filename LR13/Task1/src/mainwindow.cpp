@@ -27,11 +27,11 @@ MainWindow::MainWindow(QWidget *parent)
     auto *hLayout = new QHBoxLayout();
     auto *language = new QComboBox();
 
-    language->setFont(QFont("Times New Roman", 12));
+    language->setFont(QFont("Noto Sans Mono", 12));
     language->addItems({"English", "Русский", "Deutsch", "Français", "اَلْعَرَبِيَّةُ",
                         "汉语", "Беларуская", "עִבְרִית"});
 
-    openFileButton->setFont(QFont("Times New Roman", 12));
+    openFileButton->setFont(QFont("Noto Sans Mono", 12));
     openFileButton->setStyleSheet(
         "background-color: #1f1f1f;"
         "border: 1px solid #2b2b2b;"
@@ -46,7 +46,7 @@ MainWindow::MainWindow(QWidget *parent)
         "border-radius: 5px;"
         "padding: 5px;");
     timerLabel->setText("00:00");
-    timerLabel->setFont(QFont("Times New Roman", 12));
+    timerLabel->setFont(QFont("Noto Sans Mono", 12));
     timerLabel->setMaximumHeight(30);
 
     wordsPerMinute->setAlignment(Qt::AlignCenter);
@@ -56,7 +56,7 @@ MainWindow::MainWindow(QWidget *parent)
         "border-radius: 5px;"
         "padding: 5px;");
     wordsPerMinute->setText("0 WPM");
-    wordsPerMinute->setFont(QFont("Times New Roman", 12));
+    wordsPerMinute->setFont(QFont("Noto Sans Mono", 12));
     wordsPerMinute->setMaximumHeight(30);
 
     hLayout->addWidget(language);

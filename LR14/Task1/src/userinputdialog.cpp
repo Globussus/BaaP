@@ -83,7 +83,7 @@ void UserInputDialog::onButtonBoxAccepted() {
     input.crewSize = crewSizeSpin->value();
     input.displacement = displacementSpin->value();
     QString classStr = classEdit->text();
-    input.shipClass = classStr.isEmpty() ? ' ' : classStr.at(0).toLatin1();
+    input.shipClass = isValidClass(classStr.at(0).toLatin1()) ? classStr.at(0).toLatin1() : 'E';
     input.isActive = activeCheck->isChecked();
 
     input.cargoWeights[0] = cargoSpin0->value();
@@ -94,4 +94,22 @@ void UserInputDialog::onButtonBoxAccepted() {
 
     emit inputInit(input);
     close();
+}
+
+bool UserInputDialog::isValidClass(const char symbol) {
+    switch(symbol){
+        case 'A':
+        case 'a':
+        case 'B':
+        case 'b':
+        case 'C':
+        case 'c':
+        case 'D':
+        case 'd':
+        case 'E':
+        case 'e':
+            return true;
+        default:
+            return false;
+    }
 }

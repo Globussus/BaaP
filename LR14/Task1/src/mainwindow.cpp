@@ -14,11 +14,11 @@ MainWindow::MainWindow(QWidget *parent)
     setCentralWidget(centralWidget);
     QGridLayout *gridLayout = new QGridLayout(centralWidget);
 
-    QLabel *strLabel = new QLabel("<html><head/><body><p><span style=\" font-size:16pt; font-weight:700;\">Явная инициализация: </span></p></body></html>", this);
-    QLabel *codeLabel = new QLabel("<html><head/><body><p><span style=\" font-size:16pt; font-weight:700;\">Инициализация в коде: </span></p></body></html>", this);
-    QLabel *ptrLabel = new QLabel("<html><head/><body><p><span style=\" font-size:16pt; font-weight:700;\">Через указатель: </span></p></body></html>", this);
-    QLabel *refLabel = new QLabel("<html><head/><body><p><span style=\" font-size:16pt; font-weight:700;\">Через ссылку: </span></p></body></html>", this);
-    QLabel *userLabel = new QLabel("<html><head/><body><p><span style=\" font-size:16pt; font-weight:700;\">Ввод пользователя: </span></p></body></html>", this);
+    QLabel *strLabel = new QLabel("Явная инициализация", this);
+    QLabel *codeLabel = new QLabel("Инициализация в коде", this);
+    QLabel *ptrLabel = new QLabel("Через указатель", this);
+    QLabel *refLabel = new QLabel("Через ссылку", this);
+    QLabel *userLabel = new QLabel("Ввод пользователя", this);
 
     strBrowser = new QTextBrowser(this);
     codeBrowser = new QTextBrowser(this);
@@ -54,7 +54,7 @@ MainWindow::~MainWindow() {}
 
 void MainWindow::initWithStr() {
     strInit = {15, 1200.5, 'A', true, {0}, {10, 20, 30, 40, 50}};
-    strcpy(strInit.name, "Корабль");
+    strcpy(strInit.name, "Кораблик 1");
 
     QString str = QString::number(strInit.crewSize) + " | " + QString::number(strInit.displacement) + " | " + strInit.shipClass + " | " + (strInit.isActive ? "true" : "false") + " | " + QString(strInit.name) + " | ";
     for (int i = 0; i < Ship::maxLevelsSize; ++i) {
@@ -68,7 +68,7 @@ void MainWindow::initWithCode() {
     codeInit.displacement = 2500.0;
     codeInit.shipClass = 'B';
     codeInit.isActive = false;
-    strcpy(codeInit.name, "Лодка");
+    strcpy(codeInit.name, "Кораблик 2");
 
     int codeInitCargo[] = {5, 10, 15, 20, 25};
     for (int i = 0; i < Ship::maxLevelsSize; ++i) {
@@ -87,7 +87,7 @@ void MainWindow::initWithPtr() {
     ptr->displacement = 800.75;
     ptr->shipClass = 'C';
     ptr->isActive = true;
-    strcpy(ptr->name, "Парусник");
+    strcpy(ptr->name, "Кораблик 3");
 
     int ptrInitCargo[] = {2, 4, 6, 8, 10};
     for (int i = 0; i < Ship::maxLevelsSize; ++i) {
@@ -106,7 +106,7 @@ void MainWindow::initWithRef() {
     ref.displacement = 5000.0;
     ref.shipClass = 'D';
     ref.isActive = true;
-    strcpy(ref.name, "Фрегат");
+    strcpy(ref.name, "Кораблик 4");
 
     int refInitCargo[] = {12, 24, 36, 48, 60};
     for (int i = 0; i < Ship::maxLevelsSize; ++i) {

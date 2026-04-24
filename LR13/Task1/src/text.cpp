@@ -37,27 +37,86 @@ Text::~Text() {
 }
 
 QString Text::generate() {
-    QMap<Layout, QString> alphabets{
-        {English, "abcdefghijklmnopqrstuvwxyz"},
-        {Russian, "абвгдежзийклмнопстуфхцчшщъыьэюя"},
-        {German, "abcdefghijklmnopqrstuvwxyzäöü"},
-        {French, "abcdefghijklmnpqrstuvwxyzù"},
-        {Arabic, "ءؤئاابةتثجحخدرزسشصضطظعغفقكللمنهوىي"},
-        {Chinese, "一中人十卜口土大女尸山廿弓心戈手日月木水火田竹重金難"},
-        {Belarusian, "абвгдежзйклмнопрстуфхцчшыьэюяіў"},
-        {Hebrew, "אבגדהוזחטיךכלםמןנסעףפץצקרשת"}};
-    QString resultText;
-    for (int i = 2; i <= 6; i++) {
-        for (int j = 0; j < (kColumnCount - i) / 2; j += i + 1) {
-            QString word;
-            for (int k = 0; k < i * i; k++) {
-                word += alphabets[keyboardLayout]
-                                 [rand() % alphabets[keyboardLayout].size()];
-            }
-            resultText += word + " ";
+    QMap<Layout, QVector<QString>> words{
+        {English,
+         {"the", "quick", "brown", "fox", "jumps", "over", "lazy", "dog",
+          "hello", "world", "cat", "sun", "moon", "star", "tree", "house",
+          "car", "road", "book", "pen", "water", "fire", "wind", "earth",
+          "sky", "cloud", "rain", "snow", "flower", "grass", "leaf", "bird",
+          "fish", "horse", "sheep", "cow", "milk", "bread", "cheese", "apple",
+          "orange", "lemon", "table", "chair", "window", "door", "floor",
+          "wall", "garden", "river", "mountain"}},
+        {Russian,
+         {"привет", "мир", "солнце", "луна", "звезда", "дерево", "дом",
+          "машина", "дорога", "книга", "ручка", "вода", "огонь", "ветер",
+          "земля", "небо", "облако", "дождь", "снег", "цветок", "трава",
+          "лист", "птица", "рыба", "лошадь", "овца", "корова", "молоко",
+          "хлеб", "сыр", "яблоко", "апельсин", "лимон", "стол", "стул",
+          "окно", "дверь", "пол", "стена", "сад", "река", "гора", "друг",
+          "семья", "работа", "школа", "университет", "город", "страна",
+          "язык", "карандаш"}},
+        {German,
+         {"hallo", "welt", "sonne", "mond", "stern", "baum", "haus", "auto",
+          "strasse", "buch", "stift", "wasser", "feuer", "wind", "erde",
+          "himmel", "wolke", "regen", "schnee", "blume", "gras", "blatt",
+          "vogel", "fisch", "pferd", "schaf", "kuh", "milch", "brot",
+          "kaese", "apfel", "orange", "zitrone", "tisch", "stuhl", "fenster",
+          "tuer", "boden", "decke", "wand", "garten", "fluss", "berg",
+          "freund", "familie", "arbeit", "schule", "universitaet", "stadt",
+          "land", "flugzeug"}},
+        {French,
+         {"bonjour", "monde", "soleil", "lune", "etoile", "arbre", "maison",
+          "voiture", "route", "livre", "stylo", "eau", "feu", "vent", "terre",
+          "ciel", "nuage", "pluie", "neige", "fleur", "herbe", "feuille",
+          "oiseau", "poisson", "cheval", "mouton", "vache", "lait", "pain",
+          "fromage", "pomme", "orange", "citron", "table", "chaise",
+          "fenetre", "porte", "sol", "plafond", "mur", "jardin", "riviere",
+          "montagne", "ami", "famille", "travail", "ecole", "universite",
+          "ville", "pays", "nuage"}},
+        {Arabic,
+         {"مرحبا", "عالم", "شمس", "قمر", "نجم", "شجرة", "بيت", "سيارة",
+          "طريق", "كتاب", "قلم", "ماء", "نار", "ريح", "ارض", "سماء",
+          "سحاب", "مطر", "ثلج", "وردة", "عشب", "ورق", "طائر", "سمك",
+          "حصان", "خروف", "بقرة", "حليب", "خبز", "جبن", "تفاح", "برتقال",
+          "ليمون", "طاولة", "كرسي", "باب", "ارضية", "سقف", "جدار",
+          "حديقة", "وادي", "جبل", "صديق", "عائلة", "عمل", "مدرسة",
+          "جامعة", "مدينة", "بلد", "بحر"}},
+        {Chinese,
+         {"手", "拉", "水", "口", "山", "戈", "人", "心", "日", "尸",
+          "木", "火", "土", "竹", "十", "大", "中", "重", "難", "金",
+          "女", "月", "弓", "一", "手拉", "水口", "山戈", "人心", "日尸",
+          "木火", "土竹", "十大", "中金", "女月", "弓一", "重難", "廿卜",
+          "一口", "大中", "日土", "尸山", "木水", "火竹", "土十", "竹大",
+          "十中", "手日", "拉尸", "水山", "戈口"}},
+        {Belarusian,
+         {"прывітанне", "свет", "сонца", "месяц", "зорка", "дрэва", "дом",
+          "машына", "дарога", "кніга", "ручка", "вада", "агонь", "вецер",
+          "зямля", "неба", "воблака", "дождж", "снег", "кветка", "трава",
+          "ліст", "птушка", "рыба", "конь", "авечка", "карова", "малако",
+          "хлеб", "сыр", "яблык", "апельсін", "лімон", "стол", "стул",
+          "акно", "дзверы", "падлога", "сцяна", "сад", "рака", "гара",
+          "сябар", "праца", "школа", "універсітэт", "горад", "краіна",
+          "вуліца", "лес", "поле"}},
+        {Hebrew,
+         {"שלום", "עולם", "שמש", "ירח", "כוכב", "עץ", "בית", "מכונית",
+          "דרך", "ספר", "עט", "מים", "אש", "רוח", "אדמה", "שמיים",
+          "ענן", "גשם", "שלג", "פרח", "דשא", "עלה", "ציפור", "דג",
+          "סוס", "כבשה", "פרה", "חלב", "לחם", "גבינה", "תפוח", "תפוז",
+          "לימון", "שולחן", "כיסא", "חלון", "דלת", "רצפה", "תקרה", "קיר",
+          "גן", "נהר", "הר", "חבר", "משפחה", "עבודה", "כיתה", "אוניברסיטה",
+          "עיר", "מדינה", "ים"}}};
+
+    srand(time(nullptr));
+    QString result;
+    int wordCount = 25;
+    for (int i = 0; i < wordCount; ++i) {
+        QString word = words[keyboardLayout][rand() % words[keyboardLayout].size()];
+        if (!result.isEmpty()) {
+            result += " ";
         }
+        result += word;
     }
-    return resultText;
+    return result;
 }
 
 void Text::generateConverter() {

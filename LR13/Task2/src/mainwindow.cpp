@@ -138,7 +138,7 @@ void MainWindow::executeFunction() {
         } else {
             buffer[BUFFER_SIZE - 1] = '\0';
         }
-        logMessage(QString("Результат memmove: '%1'").arg(buffer));
+        logMessage(QString("Результат memmove: '%1'").arg(s1));
     } 
     else if (funcName == "strcpy") {
         safeCopyToBuffer(buffer, BUFFER_SIZE, s2);

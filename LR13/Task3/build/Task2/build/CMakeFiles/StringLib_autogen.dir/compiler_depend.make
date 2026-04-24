@@ -27,6 +27,33 @@ Task2/build/StringLib_autogen/timestamp: /home/globus/Документы/ОАи�
   /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicToolHelpers.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicWalkLibsHelpers.cmake \
   /usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake \
+  /usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake \
+  /home/globus/Документы/ОАиП/BaaP/LR13/Task2/CMakeLists.txt \
+  /home/globus/Документы/ОАиП/BaaP/LR13/Task2/src/iterator.cpp \
+  /home/globus/Документы/ОАиП/BaaP/LR13/Task2/src/myString.cpp \
+  /home/globus/Документы/ОАиП/BaaP/LR13/Task2/src/reverseIterator.cpp \
+  /usr/bin/cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Config.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigExtras.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersion.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersionImpl.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Dependencies.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Targets.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6VersionlessTargets.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtFeature.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtFeatureCommon.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicAppleHelpers.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeHelpers.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicDependencyHelpers.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicFinalizerHelpers.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicFindPackageHelpers.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicPluginHelpers.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicTargetHelpers.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicTestHelpers.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicToolHelpers.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicWalkLibsHelpers.cmake \
+  /usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake \
   /usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake
 
 

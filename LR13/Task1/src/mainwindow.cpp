@@ -3,6 +3,7 @@
 #include <QComboBox>
 #include <QFileDialog>
 #include <QTextStream>
+#include <QDir>
 #include <QTimer>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -127,7 +128,7 @@ void MainWindow::statusUpdate() {
 
 void MainWindow::openFile() {
     QString filename = QFileDialog::getOpenFileName(
-        this, "Open Text File", "/home", "Text Files (*.txt)");
+        this, "Open Text File", QDir::currentPath(), "Text Files (*.txt)");
     if (!filename.isEmpty()) {
         QFile file(filename);
         if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {

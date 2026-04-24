@@ -76,12 +76,7 @@ void Letter::reset() {
 }
 
 void Letter::refresh() {
-    setStyleSheet("font-size: " + QString::number(fontSize) + "px;" +
-                  "color: " + color + ";" +
-                  (underlined
-                       ? ("border-bottom: " + QString::number(underlineWidth) +
-                          "px solid " + underlineColor + ";")
-                       : ""));
+    setStyleSheet("font-size: " + QString::number(fontSize) + "px;" +"color: " + color + ";" + (underlined ? ("border-bottom: " + QString::number(underlineWidth) + "px solid " + underlineColor + ";"): ""));
     setText(letter);
 }
 

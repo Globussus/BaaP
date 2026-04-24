@@ -41,6 +41,7 @@ private:
     Ship input;
 
     void setupUi();
+    bool isValidClass(const char symbol);
 };
 
 #endif

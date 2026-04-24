@@ -66,10 +66,10 @@ include Task2/build/CMakeFiles/Task2_autogen_timestamp_deps.dir/compiler_depend.
 # Include the progress variables for this target.
 include Task2/build/CMakeFiles/Task2_autogen_timestamp_deps.dir/progress.make
 
-Task2/build/CMakeFiles/Task2_autogen_timestamp_deps: Task2/build/libStringLib.so
 Task2/build/CMakeFiles/Task2_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
 Task2/build/CMakeFiles/Task2_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
 Task2/build/CMakeFiles/Task2_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
+Task2/build/CMakeFiles/Task2_autogen_timestamp_deps: Task2/build/libStringLib.so
 
 Task2_autogen_timestamp_deps: Task2/build/CMakeFiles/Task2_autogen_timestamp_deps
 Task2_autogen_timestamp_deps: Task2/build/CMakeFiles/Task2_autogen_timestamp_deps.dir/build.make

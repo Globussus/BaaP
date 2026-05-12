@@ -1,0 +1,5 @@
+/home/globus/Документы/ОАиП/BaaP/LR15/Task5/build/CMakeFiles/Task5.dir
+/home/globus/Документы/ОАиП/BaaP/LR15/Task5/build/CMakeFiles/edit_cache.dir
+/home/globus/Документы/ОАиП/BaaP/LR15/Task5/build/CMakeFiles/rebuild_cache.dir
+/home/globus/Документы/ОАиП/BaaP/LR15/Task5/build/CMakeFiles/Task5_autogen_timestamp_deps.dir
+/home/globus/Документы/ОАиП/BaaP/LR15/Task5/build/CMakeFiles/Task5_autogen.dir

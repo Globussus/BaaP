@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Task5.dir/Task5_autogen/mocs_compilation.cpp.o CMakeFiles/Task5.dir/main.cpp.o CMakeFiles/Task5.dir/mainwindow.cpp.o -o Task5  /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so 

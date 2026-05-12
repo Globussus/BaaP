@@ -68,8 +68,8 @@ include CMakeFiles/Task2_autogen_timestamp_deps.dir/progress.make
 
 CMakeFiles/Task2_autogen_timestamp_deps: libStringLib.so
 CMakeFiles/Task2_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
-CMakeFiles/Task2_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 CMakeFiles/Task2_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
+CMakeFiles/Task2_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 
 Task2_autogen_timestamp_deps: CMakeFiles/Task2_autogen_timestamp_deps
 Task2_autogen_timestamp_deps: CMakeFiles/Task2_autogen_timestamp_deps.dir/build.make

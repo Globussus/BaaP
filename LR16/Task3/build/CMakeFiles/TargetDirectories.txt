@@ -1,0 +1,5 @@
+/home/globus/Документы/ОАиП/BaaP/LR16/Task3/build/CMakeFiles/Task3.dir
+/home/globus/Документы/ОАиП/BaaP/LR16/Task3/build/CMakeFiles/edit_cache.dir
+/home/globus/Документы/ОАиП/BaaP/LR16/Task3/build/CMakeFiles/rebuild_cache.dir
+/home/globus/Документы/ОАиП/BaaP/LR16/Task3/build/CMakeFiles/Task3_autogen_timestamp_deps.dir
+/home/globus/Документы/ОАиП/BaaP/LR16/Task3/build/CMakeFiles/Task3_autogen.dir

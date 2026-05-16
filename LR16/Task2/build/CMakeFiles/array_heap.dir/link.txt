@@ -1,0 +1,2 @@
+/usr/bin/ar qc libarray_heap.a CMakeFiles/array_heap.dir/array_heap_autogen/mocs_compilation.cpp.o CMakeFiles/array_heap.dir/array_heap.cpp.o
+/usr/bin/ranlib libarray_heap.a

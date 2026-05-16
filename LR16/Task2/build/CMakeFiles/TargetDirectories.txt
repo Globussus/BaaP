@@ -1,0 +1,11 @@
+/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/CMakeFiles/array_heap.dir
+/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/CMakeFiles/list_heap.dir
+/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/CMakeFiles/heap_gui.dir
+/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/CMakeFiles/edit_cache.dir
+/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/CMakeFiles/rebuild_cache.dir
+/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/CMakeFiles/array_heap_autogen_timestamp_deps.dir
+/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/CMakeFiles/array_heap_autogen.dir
+/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/CMakeFiles/list_heap_autogen_timestamp_deps.dir
+/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/CMakeFiles/list_heap_autogen.dir
+/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/CMakeFiles/heap_gui_autogen_timestamp_deps.dir
+/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/CMakeFiles/heap_gui_autogen.dir

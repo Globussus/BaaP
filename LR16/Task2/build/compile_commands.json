@@ -1,0 +1,44 @@
+[
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build",
+  "command": "/usr/bin/c++  -I/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/array_heap_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR16/Task2 -g -std=gnu++17 -o CMakeFiles/array_heap.dir/array_heap_autogen/mocs_compilation.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/array_heap_autogen/mocs_compilation.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/array_heap_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/array_heap.dir/array_heap_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build",
+  "command": "/usr/bin/c++  -I/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/array_heap_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR16/Task2 -g -std=gnu++17 -o CMakeFiles/array_heap.dir/array_heap.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR16/Task2/array_heap.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR16/Task2/array_heap.cpp",
+  "output": "CMakeFiles/array_heap.dir/array_heap.cpp.o"
+},
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build",
+  "command": "/usr/bin/c++ -Dlist_heap_EXPORTS -I/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/list_heap_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR16/Task2 -g -std=gnu++17 -fPIC -o CMakeFiles/list_heap.dir/list_heap_autogen/mocs_compilation.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/list_heap_autogen/mocs_compilation.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/list_heap_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/list_heap.dir/list_heap_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build",
+  "command": "/usr/bin/c++ -Dlist_heap_EXPORTS -I/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/list_heap_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR16/Task2 -g -std=gnu++17 -fPIC -o CMakeFiles/list_heap.dir/list_heap.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR16/Task2/list_heap.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR16/Task2/list_heap.cpp",
+  "output": "CMakeFiles/list_heap.dir/list_heap.cpp.o"
+},
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/heap_gui_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR16/Task2 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/heap_gui.dir/heap_gui_autogen/mocs_compilation.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/heap_gui_autogen/mocs_compilation.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/heap_gui_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/heap_gui.dir/heap_gui_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/heap_gui_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR16/Task2 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/heap_gui.dir/main.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR16/Task2/main.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR16/Task2/main.cpp",
+  "output": "CMakeFiles/heap_gui.dir/main.cpp.o"
+},
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/globus/Документы/ОАиП/BaaP/LR16/Task2/build/heap_gui_autogen/include -I/home/globus/Документы/ОАиП/BaaP/LR16/Task2 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/heap_gui.dir/mainwindow.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR16/Task2/mainwindow.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR16/Task2/mainwindow.cpp",
+  "output": "CMakeFiles/heap_gui.dir/mainwindow.cpp.o"
+}
+]

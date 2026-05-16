@@ -1,0 +1,132 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Task2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "array_heap::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-array_heap-Debug-2be2d84b0274ac6d6425.json",
+					"name" : "array_heap",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "array_heap_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-array_heap_autogen-Debug-dcd6fdc7a175232b66c7.json",
+					"name" : "array_heap_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "array_heap_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-array_heap_autogen_timestamp_deps-Debug-377f9d9cff9cf51c5c88.json",
+					"name" : "array_heap_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "heap_gui::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-heap_gui-Debug-05e17010bbdf8547368e.json",
+					"name" : "heap_gui",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "heap_gui_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-heap_gui_autogen-Debug-75392f547aa71b0f0f49.json",
+					"name" : "heap_gui_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "heap_gui_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-heap_gui_autogen_timestamp_deps-Debug-99c1b809c6a7ad6c4326.json",
+					"name" : "heap_gui_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "list_heap::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-list_heap-Debug-9afb1fd57242d5c3926d.json",
+					"name" : "list_heap",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "list_heap_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-list_heap_autogen-Debug-07f78fad647c1eeb580b.json",
+					"name" : "list_heap_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "list_heap_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-list_heap_autogen_timestamp_deps-Debug-f6decb36197bd65faa1d.json",
+					"name" : "list_heap_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR16/Task2/build",
+		"source" : "/home/globus/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/\u041e\u0410\u0438\u041f/BaaP/LR16/Task2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

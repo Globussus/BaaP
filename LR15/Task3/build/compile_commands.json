@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR15/Task3/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/globus/Документы/ОАиП/BaaP/LR15/Task3/build/Task3_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task3.dir/Task3_autogen/mocs_compilation.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR15/Task3/build/Task3_autogen/mocs_compilation.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR15/Task3/build/Task3_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/Task3.dir/Task3_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR15/Task3/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/globus/Документы/ОАиП/BaaP/LR15/Task3/build/Task3_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task3.dir/main.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR15/Task3/main.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR15/Task3/main.cpp",
+  "output": "CMakeFiles/Task3.dir/main.cpp.o"
+},
+{
+  "directory": "/home/globus/Документы/ОАиП/BaaP/LR15/Task3/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/globus/Документы/ОАиП/BaaP/LR15/Task3/build/Task3_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -g -std=gnu++17 -fPIC -o CMakeFiles/Task3.dir/mainwindow.cpp.o -c /home/globus/Документы/ОАиП/BaaP/LR15/Task3/mainwindow.cpp",
+  "file": "/home/globus/Документы/ОАиП/BaaP/LR15/Task3/mainwindow.cpp",
+  "output": "CMakeFiles/Task3.dir/mainwindow.cpp.o"
+}
+]

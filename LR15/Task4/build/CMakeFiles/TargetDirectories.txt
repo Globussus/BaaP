@@ -1,0 +1,5 @@
+/home/globus/Документы/ОАиП/BaaP/LR15/Task4/build/CMakeFiles/Task4.dir
+/home/globus/Документы/ОАиП/BaaP/LR15/Task4/build/CMakeFiles/edit_cache.dir
+/home/globus/Документы/ОАиП/BaaP/LR15/Task4/build/CMakeFiles/rebuild_cache.dir
+/home/globus/Документы/ОАиП/BaaP/LR15/Task4/build/CMakeFiles/Task4_autogen_timestamp_deps.dir
+/home/globus/Документы/ОАиП/BaaP/LR15/Task4/build/CMakeFiles/Task4_autogen.dir
